@@ -1,9 +1,97 @@
-// В этом файле должны быть стили для БЭМ-блока how-it-works, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .how-it-works {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    text-align: center;
+  }
+
+  &__nav {
+    padding: 0 16px;
+    margin-bottom: 32px;
+    white-space: nowrap;
+    background-color: $white;
+    border-radius: $border-radius--md;
+  }
+
+  &__row {
+    gap: 16px 0;
+  }
+
+  &__col-img {
+    @include col(xs, 12);
+    @include col(md, 5, $grid-columns, 16px);
+    @include col(xl, 4, $grid-columns, 32px);
+  }
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col(md, 7, $grid-columns, 16px);
+    @include col(xl, 8, $grid-columns, 32px);
+  }
+
+  &__img {
+    border-radius: $border-radius--md;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__more-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 16px;
+
+    a {
+      padding: 0 8px;
+    }
+  }
+
+  .nav-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0 32px;
+    //padding-bottom: 8px;
+    overflow-x: auto;
+  }
+
+  .nav-link {
+    position: relative;
+    padding: 8px 0 16px;
+    font-family: inherit;
+    user-select: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &.active {
+      text-decoration: none;
+      color: inherit;
+
+      span::before {
+        width: 100% !important;
+      }
+    }
+
+    span {
+      position: relative;
+      padding: 4px 0 5px;
+
+      &::before {
+        display: block;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: $main-color;
+        transition: width $transition-time;
+      }
+    }
+  }
 }

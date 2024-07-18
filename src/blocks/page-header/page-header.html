@@ -1,11 +1,42 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-header/page-header.html')
-
 -->
 
-<header class="page-header" role="banner">
-  page-header
+<header class="page-header">
+  <div class="container  page-header__inner">
+    <div class="page-header__top">
+      <div class="page-header__contacts  page-header__contacts--dt">
+        @@include('../../blocks/contacts-block/contacts-block.html')
+      </div>
+
+      <div class="page-header__logo-wrapper">
+        @@include('../../blocks/logo/logo.html')
+      </div>
+
+      <div class="page-header__service-menu">
+        <div class="dropdown-center  lang-switcher">
+          <button class="btn  btn--sm  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,4">
+            <span>Укр</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li class="lang-switcher__item"><a class="dropdown-item" href="#"><span>Укр</span></a></li>
+            <li class="lang-switcher__item"><a class="dropdown-item" href="#"><span>Eng</span></a></li>
+          </ul>
+        </div>
+
+        <a href="#" class="btn  btn--sm  page-header__order-btn">
+          <span>Замовити</span>
+        </a>
+
+        <button class="page-header__menu-btn" data-bs-toggle="offcanvas" data-bs-target="#mobMenu" aria-controls="mobMenu">
+          <span>Меню</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18"><rect width="24" height="2"/><rect y="8" width="24" height="2"/><rect y="16" width="24" height="2"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="page-header__nav">
+      @@include('../../blocks/main-nav/main-nav.html')
+    </div>
+  </div>
 </header>

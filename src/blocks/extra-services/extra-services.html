@@ -1,14 +1,54 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/extra-services/extra-services.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="extra-services">content</div>
-
 -->
+
+<section class="container  extra-services">
+  <h2 class="title-underlined  extra-services__title"><span>Додаткові послуги</span></h2>
+
+  <ul class="list-nostyled  row  extra-services__row">
+    <li class="extra-services__col">
+      <div class="extra-services__card"
+            style="background-image: url(/img/extra-services-bg.webp);"
+            data-bg="/img/extra-services-bg.jpg"
+            data-bg-webp="/img/extra-services-bg.webp">
+        <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
+          <img src="img/wrench.svg" width="88" height="88" alt="" loading="lazy">
+        </span>
+        <div class="extra-services__text">
+          <h3 class="h5  extra-services__card-title">Ремонт</h3>
+          <p>Ми пропонуємо професійний та швидкий ремонт пристроїв РЕБ</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="extra-services__col">
+      <div class="extra-services__card"
+            style="background-image: url(/img/extra-services-bg.webp);"
+            data-bg="/img/extra-services-bg.jpg"
+            data-bg-webp="/img/extra-services-bg.webp">
+        <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
+          <img src="img/gear.svg" width="88" height="88" alt="" loading="lazy">
+        </span>
+        <div class="extra-services__text">
+          <h3 class="h5  extra-services__card-title">Монтаж</h3>
+          <p>Забезпечуємо їх правильне встановлення та налаштування</p>
+        </div>
+      </div>
+    </li>
+
+    <li class="extra-services__col">
+      <div class="extra-services__card"
+            style="background-image: url(/img/extra-services-bg.webp);"
+            data-bg="/img/extra-services-bg.jpg"
+            data-bg-webp="/img/extra-services-bg.webp">
+        <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
+          <img src="img/wrench.svg" width="88" height="88" alt="" loading="lazy">
+        </span>
+        <div class="extra-services__text">
+          <h3 class="h5  extra-services__card-title">Ремонт</h3>
+          <p>Ми пропонуємо професійний та швидкий ремонт пристроїв РЕБ</p>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>

@@ -1,8 +1,77 @@
-// В этом файле должны быть стили для БЭМ-блока page-header, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-header {
+  color: $white;
+  background-color: $secondary-color;
 
   $block-name:                &; // #{$block-name}__element
+
+  .lang-switcher {
+
+    @media (max-width: $screen-xl - 1) {
+      display: none;
+    }
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media (min-width: $menu-desktop-width) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__contacts {
+
+    &--dt {
+      display: none;
+
+      @media (min-width: $menu-desktop-width) {
+        display: block;
+      }
+    }
+  }
+
+  &__service-menu {
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__order-btn {
+
+    @media (max-width: $screen-md - 1) {
+      display: none;
+    }
+  }
+
+  &__menu-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    height: 42px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    line-height: $line-height;
+    color: inherit;
+    background: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+
+    @media (min-width: $menu-desktop-width) {
+      display: none;
+    }
+
+    svg {
+      width: 24px;
+      height: 18px;
+      fill: $white;
+    }
+  }
 }

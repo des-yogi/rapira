@@ -17,22 +17,29 @@
 
       <main class="main">
 
-        <div class="container">
-          <div class="row" style="gap: 20px 0;">
-            <div class="test-col">
-              <p style="height: 100px; margin: 0; background: green;">Текст 1</p>
-            </div>
-            <div class="test-col">
-              <p style="height: 120px; margin: 0; background: blue;">Текст 2</p>
-            </div>
-            <div class="test-col">
-              <p style="height: 100px; margin: 0; background: orange;">Текст 3</p>
-            </div>
-            <div class="test-col">
-              <p style="height: 100px; margin: 0; background: green;">Текст 4</p>
-            </div>
-          </div>
+        <h1 class="visually-hidden">Рапира - официальный сайт компании</h1>
+
+        @@include('blocks/hero/hero.html')
+
+        <div class="main__content">
+          @@include('blocks/features/features.html')
+
+          @@include('blocks/product-slider/product-slider.html')
+
+          @@include('blocks/video/video.html')
+
+          @@include('blocks/certificates/certificates.html')
+
+          @@include('blocks/how-it-works/how-it-works.html')
+
+          @@include('blocks/extra-services/extra-services.html')
+
+          @@include('blocks/news-block/news-block.html')
+
+          @@include('blocks/mosaic/mosaic.html')
         </div>
+
+          @@include('blocks/order-block/order-block.html')
 
       </main>
 
@@ -43,6 +50,8 @@
     </div>
 
   </div>
+
+  @@include('blocks/mob-nav/mob-nav.html')
 
   @@include('_include/page_bottom.html')
 

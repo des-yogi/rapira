@@ -12,36 +12,48 @@ $gray-lighter:                hsl(0, 0%, 80%);
 $gray-lightest:               hsl(0, 0%, 90%);
 $white:                       hsl(0, 0%, 100%);
 
-$color-success:               hsl(120, 39%, 54%);
-$color-danger:                hsl(2, 64%, 58%);
-$color-warning:               hsl(35, 84%, 62%);
+$color-success:               #24ff3a;
+$color-danger:                #ff2020;
+$color-warning:               #ffd600;
 
 //$color-vk:                    #4a76a8;
-$color-fb:                    #4267b2;
-$color-tw:                    #40A2F5;
-$color-gh:                    #24292e;
+//$color-fb:                    #4267b2;
+//$color-tw:                    #40A2F5;
+//$color-gh:                    #24292e;
 
 
 // Семантические цвета
 
-$main-color:                  #FFD600;
+$main-color:                  #ffd600;
 $color-main:                  $main-color;
-$secondary-color:             #1A1817; // black
+$secondary-color:             #1a1817; // black
 
 $text-color:                  $secondary-color;
 $title-color:                 $secondary-color;
-$text-muted:                  #6C6360;
+$text-muted:                  #6c6360;
 
-$body-bg:                     #F4F4F4;
+$body-bg:                     #f9f9f9;
+
+$chess-bg:                  #424756;
 
 $link-color:                  #0040FF;
-$link-color--hover:           #6F93FF;
+$link-color--hover:           #543c00;
 
 $border-color:                $text-muted;
 $divider-color:               $main-color;
+
+$btn-bg:                      $main-color;
+$btn-bg--hover:               #ffe27a;
+$btn-bg--disabled:            #7a7a7a; //disabl_dark
+$gray-light:                  #d2d2d2; //disabl_light
+
+
 // Базовая типографика
 
-$font-size:                   15px;
+$font-size:                   16px;
+$font-size-sm:                14px;
+
+$font-size--display-1:        72px;
 
 $font-size--h1:               48px;
 $font-size--h2:               40px;
@@ -49,6 +61,7 @@ $font-size--h3:               32px;
 $font-size--h4:               24px;
 $font-size--h5:               20px;
 $font-size--h6:               16px;
+
 
 $line-height:                 1.5;
 
@@ -79,7 +92,7 @@ $container-xxl:               $screen-xxl - 20;
 
 $grid-columns:                12;
 $grid-gutter-width:           8px; // 16, 32
-// margin: 16, 32, 32
+// row margin (left-right): 16, 32, 32
 
 
 // Разное
@@ -87,10 +100,12 @@ $grid-gutter-width:           8px; // 16, 32
 $field-padding-vertical:      5px;
 $field-padding-horizontal:    12px;
 
-$border-radius:               3px;
-$opacity:                     0.7;
+$border-radius:               4px;
+$border-radius--md:           8px;
+$border-radius--lg:           16px;
+$opacity:                     0.6;
 $shadow:                      0 6px 10px 3px rgba(0, 0, 0, 0.1);
-$transition-time:             0.3s;
+$transition-time:             0.2s;
 
 // BS4 vars for mixins
 $enable-transitions:                          true !default;

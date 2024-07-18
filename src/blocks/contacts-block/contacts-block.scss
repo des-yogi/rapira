@@ -1,0 +1,17 @@
+.contacts-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: $white;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__link {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+  }
+}

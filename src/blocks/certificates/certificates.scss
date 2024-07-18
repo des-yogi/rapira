@@ -1,9 +1,62 @@
-// В этом файле должны быть стили для БЭМ-блока certificates, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .certificates {
+  position: relative;
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  &__bg {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));
+  }
+
+  &__row {
+    gap: 16px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 16px);
+    @include col(xl, 4, $grid-columns, 32px);
+
+    &:first-child {
+      @include col-offset(xl, 2);
+    }
+  }
+
+  &__img,
+  &__text {
+    background-color: $white;
+    border-radius: $border-radius--md;
+    box-shadow: $shadow;
+  }
+
+  &__img {
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    padding: 16px;
+  }
+
+  &__subtitle {
+    margin-top: 0;
+  }
 }

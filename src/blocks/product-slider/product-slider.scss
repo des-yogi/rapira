@@ -1,9 +1,58 @@
-// В этом файле должны быть стили для БЭМ-блока product-slider, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .product-slider {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    margin-top: 0;
+  }
+
+  &__slide {
+    box-sizing: border-box;
+  }
+
+  &__row {
+    gap: 24px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 16px);
+    @include col(xl, 5, $grid-columns, 32px);
+  }
+
+  &__img {
+    width: calc(100% - 14px);
+    margin: 0 auto;
+    border-radius: $border-radius--md;
+    box-shadow: $shadow;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 16px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media (min-width: $screen-xl) {
+      gap: 16px 32px;
+    }
+
+    .btn {
+      flex: 1 1 100%;
+      width: 100%;
+
+      @media (min-width: $screen-md) {
+        flex-basis: calc(50% - 8px);
+        max-width: 175px;
+      }
+    }
+  }
 }

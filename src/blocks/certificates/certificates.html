@@ -1,14 +1,52 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/certificates/certificates.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="certificates">content</div>
-
 -->
+
+<section class="container  certificates">
+  <h2 class="title-underlined  certificates__title"><span>Наші сертифікати</span></h2>
+  <span class="certificates__bg"
+        style="background-image: url(/img/certificates-bg.webp);"
+        data-bg="/img/certificates-bg.jpg"
+        data-bg-webp="/img/certificates-bg.webp"
+        aria-hidden="true"></span>
+
+  <div class="certificates__item">
+    <div class="row  certificates__row">
+      <div class="certificates__col">
+        <a href="img/certificate.jpg" class="embed-responsive  embed-responsive--a4  certificates__img" data-fancybox data-caption="Single image">
+          <picture>
+            <source srcset="img/certificate.webp 400w,
+                            img/certificate.webp 660w,
+                            img/certificate.webp 800w,
+                            img/certificate.webp 920w,
+                            img/certificate.webp 1000w"
+                    sizes="(min-width: 1280px) 25vw,
+                           (min-width: 768px) 50vw, 100vw"
+                    type="image/webp">
+            <img  src="img/certificate.jpg"
+                  srcset="img/certificate.jpg 400w,
+                          img/certificate.jpg 660w,
+                          img/certificate.jpg 800w,
+                          img/certificate.jpg 920w,
+                          img/certificate.jpg 1000w"
+                  sizes="(min-width: 1280px) 25vw,
+                         (min-width: 768px) 50vw, 100vw"
+                  width="1000"
+                  height="1414"
+                  alt="Alt Text"
+                  loading="lazy">
+          </picture>
+        </a>
+      </div>
+
+      <div class="certificates__col">
+        <div class="certificates__text">
+          <h3 class="h4  certificates__subtitle">Код НАТО</h3>
+          <p>Сертифікація НАТО підкреслює нашу відданість інноваціям та захисту, забезпечуючи безпеку в найскладніших умовах. Оберіть наші сертифіковані пристрої та будьте впевнені у надійному захисті ваших гуманітарних місій.</p>
+          <p>Не пропустіть можливість інвестувати в найкращі технології на ринку. Зв'яжіться з нами сьогодні, щоб дізнатися більше та зробити замовлення!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
