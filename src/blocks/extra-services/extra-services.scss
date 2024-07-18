@@ -1,9 +1,111 @@
-// В этом файле должны быть стили для БЭМ-блока extra-services, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .extra-services {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__title {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  &__row {
+    justify-content: center;
+    gap: 8px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 16px 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 32px 0;
+    }
+  }
+
+  &__col {
+    @include col(xs, 6);
+    @include col(md, 4, $grid-columns, 16px);
+    @include col(xl, 4, $grid-columns, 32px);
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 200px;
+    padding: 16px;
+    text-align: center;
+    color: $white;
+    background-color: $secondary-color;
+    background-size: cover;
+    background-position: center;
+    border-radius: $border-radius--md;
+    overflow: hidden;
+
+    @media (min-width: $screen-md) {
+      min-height: 300px;
+      padding: 24px;
+    }
+
+    @media (min-width: $screen-xl) {
+      min-height: 416px;
+      //padding: 32px;
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($black, 0.7);
+    }
+
+    & > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__icon {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 16px;
+
+    @media (min-width: $screen-md) {
+      width: 80px;
+      height: 80px;
+      //margin-bottom: 16px;
+    }
+
+    @media (min-width: $screen-xl) {
+      width: 88px;
+      height: 88px;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    hyphens: none;
+
+    p {
+      margin-top: 8px;
+      hyphens: inherit;
+
+      @media (max-width: $screen-md - 1) {
+        display: none;
+      }
+    }
+  }
+
+  &__card-title {
+    margin: 0 0 8px;
+  }
 }

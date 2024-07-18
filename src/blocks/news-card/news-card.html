@@ -1,0 +1,41 @@
+<!--DEV
+@ @include('blocks/news-card/news-card.html')
+-->
+
+<article class="news-card">
+  <div class="embed-responsive  news-card__img">
+    <picture>
+      <source srcset="img/news-img.webp 320w,
+                      img/news-img.webp 500w,
+                      img/news-img.webp 600w,
+                      img/news-img.webp 800w,
+                      img/news-img.webp 900w,
+                      img/news-img.webp 1200w"
+              sizes="(min-width: 992px) 33vw,
+                     (min-width: 768px) 50vw, 100vw"
+              type="image/webp">
+
+      <img src="img/video-placeholder.jpg"
+          srcset="img/news-img.jpg 320w,
+                  img/news-img.jpg 500w,
+                  img/news-img.jpg 600w,
+                  img/news-img.jpg 800w,
+                  img/news-img.jpg 900w,
+                  img/news-img.jpg 1200w"
+          sizes="(min-width: 992px) 33vw,
+                 (min-width: 768px) 50vw, 100vw"
+          width="1200"
+          height="675"
+          alt="Alt Text"
+          loading="lazy">
+    </picture>
+  </div>
+  <div class="news-card__text">
+    <h2 class="h5  news-card__title">Headline</h2>
+    <p>Друзі, вітаємо вас і нас! Від сьогодні ми переходимо на нові пульти управління зроблені із алюмінію.</p>
+    <p class="news-card__info">
+      <time class="publishedon" datetime="2024-07-30">30.07.2024</time>
+      <a href="#" class="news-card__more-link">Читати</a>
+    </p>
+  </div>
+</article>

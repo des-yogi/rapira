@@ -1,14 +1,89 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/mob-nav/mob-nav.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="mob-nav">content</div>
-
 -->
+
+<div class="offcanvas offcanvas-end  mob-nav" tabindex="-1" id="mobMenu" aria-labelledby="mobMenuLabel">
+  <div class="offcanvas-header  mob-nav__header">
+    <h4 class="visually-hidden" id="mobMenuLabel">Мобільне меню</h4>
+    <img src="img/rapira-logo.svg" alt="Site logo" width="48" height="48" loading="lazy">
+    <button class="mob-nav__close" data-bs-dismiss="offcanvas" aria-label="Закрити меню">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"><path d="m20.69,11.28l-6.74-6.48c-.41-.4-1.08-.4-1.5,0-.41.4-.41,1.04,0,1.44l4.93,4.74H3v2.04h14.39l-4.93,4.74c-.41.4-.41,1.04,0,1.44.41.4,1.08.4,1.5,0l6.74-6.48c.41-.4.41-1.04,0-1.44Z"/></svg>
+    </button>
+  </div>
+
+  <div class="offcanvas-body  mob-nav__body">
+    <nav class="mob-nav__nav">
+      <ul class="list-nostyled  mob-nav__list">
+        <li class="mob-nav__item  active">
+          <a class="mob-nav__link">
+            <span>Головна</span>
+          </a>
+        </li>
+        <li class="mob-nav__item">
+          <a href="#" class="mob-nav__link">
+            <span>Про компанію</span>
+          </a>
+        </li>
+        <li class="mob-nav__item">
+          <a href="#" class="mob-nav__link">
+            <span>Каталог</span>
+          </a>
+          <button class="mob-nav__more" data-bs-toggle="collapse" data-bs-target="#menuItem-1" aria-expanded="false" aria-controls="menuItem-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="m20.69,11.28l-6.74-6.48c-.41-.4-1.08-.4-1.5,0-.41.4-.41,1.04,0,1.44l4.93,4.74H3v2.04h14.39l-4.93,4.74c-.41.4-.41,1.04,0,1.44.41.4,1.08.4,1.5,0l6.74-6.48c.41-.4.41-1.04,0-1.44Z"/></svg>
+          </button>
+          <ul class="list-nostyled  mob-nav__list-inner  collapse" id="menuItem-1">
+            <li class="mob-nav__item">
+              <a href="#" class="mob-nav__link">
+                <span>Item 1</span>
+              </a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="#" class="mob-nav__link">
+                <span>Item 2</span>
+              </a>
+            </li>
+            <li class="mob-nav__item">
+              <a href="#" class="mob-nav__link">
+                <span>Item 3</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="mob-nav__item">
+          <a href="#" class="mob-nav__link">
+            <span>Як працює РЕБ</span>
+          </a>
+        </li>
+        <li class="mob-nav__item">
+          <a href="#" class="mob-nav__link">
+            <span>Контакти</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="mob-nav__service">
+
+      <a href="http://localhost:3000/index.html#test" class="btn  mob-nav__order">
+        <span>Замовити РЕБ</span>
+      </a>
+
+      @@include('../../blocks/contacts-block/contacts-block.html')
+    </div>
+
+    <div class="mob-nav__service">
+      <ul class="list-nostyled  mob-nav__list  mob-nav__list--add">
+        <li class="mob-nav__item  mob-nav__item--add">
+          <p class="h5">Додатково <span class="visually-hidden">Телефони</span></p>
+          <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>
+          <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>
+        </li>
+        <li class="mob-nav__item  mob-nav__item--add">
+          <p class="h5">Пошта</p>
+          <a href="mailto:eb@rapira.ua" class="contacts-block__link">eb@rapira.ua</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

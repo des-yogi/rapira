@@ -1,11 +1,137 @@
 <!--DEV
-
-Нужно убрать пробел между @-ами:
-
 @ @include('blocks/page-footer/page-footer.html')
-
 -->
 
-<footer class="page-footer" role="contentinfo">
-  page-footer
+<!-- Рапіра - високі технології, що рятують життя на передовій -->
+
+<footer class="container  page-footer">
+
+  <div class="row  page-footer__row">
+
+    <div class="page-footer__presentation-col">
+      <div class="page-footer__presentation">
+        <div class="row">
+          <div class="page-footer__logo-col">
+
+            <div class="logo  logo--footer">
+              <span class="logo__name">Рапіра</span>
+              <a href="index.html" class="logo__link">
+                <img class="logo__img" src="img/rapira-logo.svg" alt="Rapira logo" width="88" height="88">
+              </a>
+              <span class="logo__flash">
+                <img src="img/rapira-flash.svg" width="106" height="48" alt="">
+              </span>
+              <span class="logo__slogan">Знаємо все про РЕБ</span>
+            </div>
+
+            <p class="page-footer__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing, elit. Non fugiat libero quod, obcaecati, perspiciatis enim.
+            </p>
+          </div>
+          <div class="page-footer__social-col">
+            <ul class="list-nostyled  page-footer__social">
+              <li class="page-footer__social-item">
+                <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">
+                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"></use></svg>
+                  <span>Facebook</span>
+                </a>
+              </li>
+              <li class="page-footer__social-item">
+                <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">
+                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram"></use></svg>
+                  <span>Telegram</span>
+                </a>
+              </li>
+              <li class="page-footer__social-item">
+                <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">
+                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#youtube"></use></svg>
+                  <span>Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-footer__nav-col">
+      <div class="page-footer__nav-wrapper">
+        <div class="row">
+
+          <div class="page-footer__about-col">
+            <section class="page-footer__about">
+              <h3 class="page-footer__title">Про компанію</h3>
+
+              <ul class="list-nostyled  page-footer__list">
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">Гарантія та сервіс</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">Вакансії</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">Нас радять</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">FAQ</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">Новини</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="page-footer__catalog-col">
+            <section class="page-footer__catalog">
+              <h3 class="page-footer__title">Каталог</h3>
+
+              <ul class="list-nostyled  page-footer__list">
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">Рапіра</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">Їжак</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="#" class="page-footer__list-link">На замовлення</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="page-footer__contacts-col">
+            <section class="page-footer__contacts">
+              <h3 class="page-footer__title" id="pTel">Телефони</h3>
+
+              <ul class="list-nostyled  page-footer__list" aria-labelledby="pTel">
+                <li class="page-footer__list-item">
+                  <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>
+                </li>
+                <li class="page-footer__list-item">
+                  <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>
+                </li>
+              </ul>
+
+              <h3 class="page-footer__title" id="pMail">Пошта</h3>
+              <ul class="list-nostyled  page-footer__list" aria-labelledby="pMail">
+                <li class="page-footer__list-item">
+                  <a href="mailto:" class="page-footer__list-link">reb@rapira.ua</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="page-footer__copyrights">
+    @ 2024 ТОВ “ІМК Інжиниринг”
+  </div>
 </footer>

@@ -1,8 +1,153 @@
-// В этом файле должны быть стили для БЭМ-блока page-footer, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .page-footer {
+  color: $white;
+  background-color: $secondary-color;
 
   $block-name:                &; // #{$block-name}__element
+
+  &__row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 32px;
+  }
+
+  &__presentation-col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 16px);
+    @include col(xl, 12, $grid-columns, 32px);
+  }
+
+  &__nav-col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 16px);
+    @include col(xl, 12, $grid-columns, 32px);
+  }
+
+  &__logo-col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 16px);
+    @include col(xl, 4, $grid-columns, 32px);
+  }
+
+  &__social-col {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 4, $grid-columns, 16px);
+    @include col-offset(xl, 5);
+    @include col(xl, 2, $grid-columns, 32px);
+  }
+
+  &__about-col {
+    @include col(xs, 12);
+    @include col(md, 4, $grid-columns, 16px);
+    @include col-offset(xl, 5);
+    @include col(xl, 2, $grid-columns, 32px);
+  }
+
+  &__catalog-col {
+    @include col(xs, 12);
+    @include col(md, 4, $grid-columns, 16px);
+    @include col(xl, 2, $grid-columns, 32px);
+  }
+
+  &__contacts-col {
+    @include col(xs, 12);
+    @include col(md, 4, $grid-columns, 16px);
+    @include col(xl, 2, $grid-columns, 32px);
+  }
+
+  &__presentation {
+
+    .row {
+      gap: 16px 0;
+    }
+  }
+
+  &__text {
+    margin: 0 !important;
+    line-height: 1.6;
+  }
+
+  &__social {
+
+  }
+
+  &__social-item {
+
+  }
+
+  &__social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+
+    svg {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &__nav-wrapper {
+
+    .row {
+      gap: 32px 0;
+    }
+  }
+
+  &__about-col {
+
+  }
+
+  &__catalog-col {
+
+  }
+
+  &__contacts-col {
+
+  }
+
+  &__about {
+
+  }
+
+  &__title {
+    margin: 0 0 16px;
+    font-size: 20px;
+  }
+
+  &__list {
+
+  }
+
+  &__list-item {
+
+    & + & {
+      margin-top: 4px;
+    }
+  }
+
+  &__list-link {
+    display: inline-block;
+    vertical-align: baseline;
+    padding: 5px 0;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+  }
+
+  &__catalog {
+
+  }
+
+  &__contacts {
+
+  }
 }

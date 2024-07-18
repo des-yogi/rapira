@@ -37,7 +37,10 @@
     "order-form": [],
     "copyrights": [],
     "social-links": [],
-    "mob-nav": []
+    "mob-nav": [],
+    "contacts-block": [],
+    "video-card": [],
+    "news-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
@@ -47,6 +50,7 @@
     "../../node_modules/bootstrap/scss/_accordion",
     "../../node_modules/bootstrap/scss/_modal",
     "../../node_modules/bootstrap/scss/_offcanvas",
+    "../../node_modules/bootstrap/scss/_nav",
     "./src/scss/variables.scss",
     "./src/scss/mixins.scss",
     "../../node_modules/swiper/swiper-bundle.css",
@@ -62,6 +66,7 @@
     "./node_modules/autosize/dist/autosize.min.js",
     "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
     "./node_modules/swiper/swiper-bundle.min.js",
+    "./node_modules/imask/dist/imask.min.js",
     "./node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js"
   ],
   "addJsAfter": [

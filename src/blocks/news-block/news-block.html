@@ -1,14 +1,22 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/news-block/news-block.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="news-block">content</div>
-
 -->
+
+<section class="container  news-block">
+  <h2 class="title-underlined  news-block__title"><span>Останні новини</span></h2>
+
+  <div class="row  news-block__row">
+    <div class="news-block__col">
+      @@include('../../blocks/news-card/news-card.html')
+    </div>
+
+    <div class="news-block__col">
+      @@include('../../blocks/news-card/news-card.html')
+    </div>
+
+    <div class="news-block__col">
+      @@include('../../blocks/news-card/news-card.html')
+    </div>
+  </div>
+</section>
+

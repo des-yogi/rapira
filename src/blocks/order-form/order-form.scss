@@ -1,9 +1,21 @@
-// В этом файле должны быть стили для БЭМ-блока order-form, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .order-form {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__submit-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+
+    @media (min-width: $screen-xl) {
+      align-items: flex-start;
+    }
+  }
+
+  &__submit-btn {
+    width: 100%;
+    max-width: 304px;
+    margin-top: 24px;
+  }
 }

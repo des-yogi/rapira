@@ -1,9 +1,80 @@
-// В этом файле должны быть стили для БЭМ-блока order-block, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .order-block {
+  position: relative;
+  min-height: 800px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  color: $white;
+  background-color: $secondary-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: $screen-xl) {
+    padding-top: 72px;
+    padding-bottom: 72px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($black, 0.6);
+  }
+
+  &__row {
+    position: relative;
+    z-index: 1;
+    gap: 56px 0;
+  }
+
+  &__phones-col {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 8, $grid-columns, 16px);
+    @include col-offset(xl, 0);
+    @include col(xl, 5, $grid-columns, 32px);
+  }
+
+  &__form-col {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 8, $grid-columns, 16px);
+    @include col-offset(xl, 2);
+    @include col(xl, 5, $grid-columns, 32px);
+  }
+
+  &__subtitle {
+    margin-top: 0 !important;
+  }
+
+  &__phones {
+
+  }
+
+  &__list {
+
+  }
+
+  &__list-item {
+
+    & + & {
+      margin-top: 16px;
+    }
+  }
+
+  &__list-link {
+    display: inline-flex;
+    color: inherit;
+
+    &:hover,
+    &:focus {
+      color: $main-color;
+    }
+  }
 }

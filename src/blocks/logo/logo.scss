@@ -1,11 +1,100 @@
-// В этом файле должны быть стили для БЭМ-блока logo, его элементов,
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .logo {
 
   $block-name:                &; // #{$block-name}__element
 
-  display: block;
+  display: inline-flex;
+  align-items: center;
   white-space: nowrap;
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 48px;
+    height: 48px;
+
+    @media (min-width: $screen-xl) {
+      width: 88px;
+      height: 88px;
+    }
+  }
+
+  &__name,
+  &__flash,
+  &__slogan {
+    display: none;
+  }
+
+  &__name,
+  &__flash {
+
+    @media (min-width: $screen-md) {
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1;
+
+    @media (min-width: $screen-md) {
+      margin-right: 16px;
+      transform: translateY(-1px);
+    }
+
+    @media (min-width: $screen-xl) {
+      font-size: 20px;
+    }
+  }
+
+  &__flash {
+
+    @media (min-width: $screen-xl) {
+      display: none;
+    }
+  }
+
+  &__slogan {
+
+    @media (min-width: $screen-xl) {
+      display: block;
+      margin-left: 16px;
+    }
+  }
+
+  &--footer {
+    margin-bottom: 16px;
+
+    #{$block-name}__name {
+      display: block;
+      margin-right: 8px;
+
+      @media (min-width: $screen-md) {
+        margin-right: 16px;
+      }
+    }
+
+    #{$block-name}__flash {
+
+      @media (max-width: $screen-md - 1) {
+        display: inline-flex;
+      }
+
+      @media (min-width: $screen-md) {
+        display: none;
+      }
+    }
+
+    #{$block-name}__slogan {
+
+      @media (min-width: $screen-md) {
+        display: block;
+        margin-left: 16px;
+      }
+    }
+  }
 }

@@ -1,9 +1,74 @@
-// В этом файле должны быть стили для БЭМ-блока mosaic, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .mosaic {
+  color: $white;
+  background-color: $secondary-color;
+  overflow: hidden;
+
+  @media (min-width: $screen-xl) {
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+  }
 
   $block-name:                &; // #{$block-name}__element
 
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: $screen-xl - 1) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  &__col {
+    flex: 1 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (min-width: $screen-md) {
+      flex: 1 1 50%;
+    }
+
+    &:nth-child(even) {
+
+      @media (max-width: $screen-md - 1) {
+
+        #{$block-name}__text {
+          order: -1;
+        }
+      }
+    }
+
+    &:nth-child(4n+1),
+    &:nth-child(4n+2) {
+
+      @media (min-width: $screen-md) {
+
+        #{$block-name}__text {
+          order: -1;
+        }
+      }
+    }
+  }
+
+  &__img {
+    flex: 0 0 50%;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__text {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    margin: 0;
+    text-align: center;
+    background-color: $chess-bg;
+  }
 }
