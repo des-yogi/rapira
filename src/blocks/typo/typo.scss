@@ -16,15 +16,6 @@
   src: url('../fonts/roboto-condensed-v27-cyrillic_latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-/* roboto-condensed-600 - cyrillic_latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Roboto Condensed';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/roboto-condensed-v27-cyrillic_latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-
 /* roboto-condensed-700 - cyrillic_latin */
 @font-face {
   font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -130,8 +121,7 @@ h2 {
   font-weight: 500;
 
   @media (min-width: $screen-md) {
-    font-size: $font-size--h2 * 1.3;
-    //font-weight: 600;
+    font-size: $font-size--h2 * 1.2;
   }
 }
 

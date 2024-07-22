@@ -36,7 +36,7 @@
 <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#ffffff">
 <link rel="shortcut icon" href="img/favicon.ico">
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-config" content="img/browserconfig.xml">
+<meta name="msapplication-config" content="/img/browserconfig.xml">
 <meta name="theme-color" content="#ffffff"></head>
 <body>
 <noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
@@ -501,7 +501,7 @@
           -->
           <section class="container  certificates">
             <h2 class="title-underlined  certificates__title"><span>Наші сертифікати</span></h2>
-            <span class="certificates__bg" style="background-image: url(/img/certificates-bg.webp);" data-bg="img/certificates-bg.jpg" data-bg-webp="img/certificates-bg.webp" aria-hidden="true"></span>
+            <span class="certificates__bg" style="background-image: url(img/certificates-bg.webp);" data-bg="img/certificates-bg.jpg" data-bg-webp="img/certificates-bg.webp" aria-hidden="true"></span>
             <div class="certificates__item">
               <div class="row  certificates__row">
                 <div class="certificates__col">
@@ -532,9 +532,6 @@
               </div>
             </div>
           </section>
-          <!--DEV
-          @ @include('blocks/how-it-works/how-it-works.html')
-          -->
           <section class="container  how-it-works">
             <h2 class="title-underlined  how-it-works__title"><span>Як працює РЕБ</span></h2>
             <div class="how-it-works__tab-wrapper">
@@ -681,9 +678,9 @@
             <h2 class="title-underlined  extra-services__title"><span>Додаткові послуги</span></h2>
             <ul class="list-nostyled  row  extra-services__row">
               <li class="extra-services__col">
-                <div class="extra-services__card" style="background-image: url(/img/extra-services-bg.webp);" data-bg="img/extra-services-bg.jpg" data-bg-webp="img/extra-services-bg.webp">
+                <div class="extra-services__card" style="background-image: url(img/extra-services-bg.webp);" data-bg="img/extra-services-bg.jpg" data-bg-webp="img/extra-services-bg.webp">
                   <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
-                    <img src="img/wrench.svg" width="88" height="88" alt loading="lazy">
+                    <img src="img/wrench.svg" width="80" height="80" alt loading="lazy">
                   </span>
                   <div class="extra-services__text">
                     <h3 class="h5  extra-services__card-title">Ремонт</h3>
@@ -692,9 +689,9 @@
                 </div>
               </li>
               <li class="extra-services__col">
-                <div class="extra-services__card" style="background-image: url(/img/extra-services-bg.webp);" data-bg="img/extra-services-bg.jpg" data-bg-webp="img/extra-services-bg.webp">
+                <div class="extra-services__card" style="background-image: url(img/extra-services-bg.webp);" data-bg="img/extra-services-bg.jpg" data-bg-webp="img/extra-services-bg.webp">
                   <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
-                    <img src="img/gear.svg" width="88" height="88" alt loading="lazy">
+                    <img src="img/gear.svg" width="80" height="80" alt loading="lazy">
                   </span>
                   <div class="extra-services__text">
                     <h3 class="h5  extra-services__card-title">Монтаж</h3>
@@ -703,21 +700,18 @@
                 </div>
               </li>
               <li class="extra-services__col">
-                <div class="extra-services__card" style="background-image: url(/img/extra-services-bg.webp);" data-bg="img/extra-services-bg.jpg" data-bg-webp="img/extra-services-bg.webp">
+                <div class="extra-services__card" style="background-image: url(img/extra-services-bg.webp);" data-bg="img/extra-services-bg.jpg" data-bg-webp="img/extra-services-bg.webp">
                   <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
-                    <img src="img/wrench.svg" width="88" height="88" alt loading="lazy">
+                    <img src="img/test.svg" width="80" height="80" alt loading="lazy">
                   </span>
                   <div class="extra-services__text">
-                    <h3 class="h5  extra-services__card-title">Ремонт</h3>
-                    <p>Ми пропонуємо професійний та швидкий ремонт пристроїв РЕБ</p>
+                    <h3 class="h5  extra-services__card-title">Тестування РЕБ</h3>
+                    <p>Забезпечуємо тестування РЕБ для перевірки ефективності та надійності</p>
                   </div>
                 </div>
               </li>
             </ul>
           </section>
-          <!--DEV
-          @ @include('blocks/news-block/news-block.html')
-          -->
           <section class="container  news-block">
             <h2 class="title-underlined  news-block__title"><span>Останні новини</span></h2>
             <div class="row  news-block__row">
@@ -910,7 +904,7 @@
           <!--DEV
           @ @include('blocks/order-block/order-block.html')
           -->
-          <section class="container  order-block" style="background-image: url('/img/order-block-bg.webp')" data-bg="img/order-block-bg.jpg" data-bg-webp="img/order-block-bg.webp">
+          <section class="container  order-block" style="background-image: url('img/order-block-bg.webp')" data-bg="img/order-block-bg.jpg" data-bg-webp="img/order-block-bg.webp">
             <h2 class="visually-hidden">Контактные данные для быстрой связи?</h2>
             <div class="row  order-block__row">
               <div class="order-block__phones-col">
@@ -1118,120 +1112,6 @@
           </p>
         </div>
       </footer>
-    </div>
-  </div>
-  <!--DEV
-  @ @include('blocks/mob-nav/mob-nav.html')
-  -->
-  <div class="offcanvas offcanvas-end  mob-nav" tabindex="-1" id="mobMenu" aria-labelledby="mobMenuLabel">
-    <div class="offcanvas-header  mob-nav__header">
-      <h4 class="visually-hidden" id="mobMenuLabel">Мобільне меню</h4>
-      <img src="img/rapira-logo.svg" alt="Site logo" width="48" height="48" loading="lazy">
-      <button class="mob-nav__close" data-bs-dismiss="offcanvas" aria-label="Закрити меню">
-        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true"><path d="m20.69,11.28l-6.74-6.48c-.41-.4-1.08-.4-1.5,0-.41.4-.41,1.04,0,1.44l4.93,4.74H3v2.04h14.39l-4.93,4.74c-.41.4-.41,1.04,0,1.44.41.4,1.08.4,1.5,0l6.74-6.48c.41-.4.41-1.04,0-1.44Z"/></svg>
-      </button>
-    </div>
-    <div class="offcanvas-body  mob-nav__body">
-      <nav class="mob-nav__nav">
-        <ul class="list-nostyled  mob-nav__list">
-          <li class="mob-nav__item  active">
-            <a class="mob-nav__link">
-              <span>Головна</span>
-            </a>
-          </li>
-          <li class="mob-nav__item">
-            <a href="#" class="mob-nav__link">
-              <span>Про компанію</span>
-            </a>
-          </li>
-          <li class="mob-nav__item">
-            <a href="#" class="mob-nav__link">
-              <span>Каталог</span>
-            </a>
-            <button class="mob-nav__more" data-bs-toggle="collapse" data-bs-target="#menuItem-1" aria-expanded="false" aria-controls="menuItem-1">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" aria-hidden="true"><path d="m20.69,11.28l-6.74-6.48c-.41-.4-1.08-.4-1.5,0-.41.4-.41,1.04,0,1.44l4.93,4.74H3v2.04h14.39l-4.93,4.74c-.41.4-.41,1.04,0,1.44.41.4,1.08.4,1.5,0l6.74-6.48c.41-.4.41-1.04,0-1.44Z"/></svg>
-            </button>
-            <ul class="list-nostyled  mob-nav__list-inner  collapse" id="menuItem-1">
-              <li class="mob-nav__item">
-                <a href="#" class="mob-nav__link">
-                  <span>Item 1</span>
-                </a>
-              </li>
-              <li class="mob-nav__item">
-                <a href="#" class="mob-nav__link">
-                  <span>Item 2</span>
-                </a>
-              </li>
-              <li class="mob-nav__item">
-                <a href="#" class="mob-nav__link">
-                  <span>Item 3</span>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="mob-nav__item">
-            <a href="#" class="mob-nav__link">
-              <span>Як працює РЕБ</span>
-            </a>
-          </li>
-          <li class="mob-nav__item">
-            <a href="#" class="mob-nav__link">
-              <span>Контакти</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="mob-nav__service">
-        <a href="http://localhost:3000/index.html#test" class="btn  mob-nav__order">
-          <span>Замовити РЕБ</span>
-        </a>
-        <!--DEV
-        @ @include('blocks/contacts-block/contacts-block.html')
-        -->
-        <ul class="list-nostyled  contacts-block">
-          <li class="contacts-block__item">
-            <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>
-          </li>
-          <li class="contacts-block__item">
-            <!--DEV
-            @ @include('blocks/social-links/social-links.html')
-            -->
-            <ul class="list-nostyled  social-links">
-              <li class="social-links__item">
-                <a href="#" class="social-links__link" title="Viber" target="_blank" rel="nofollow noopener">
-                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber"/></svg>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a href="#" class="social-links__link" title="Telegram" target="_blank" rel="nofollow noopener">
-                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram"/></svg>
-                </a>
-              </li>
-              <li class="social-links__item">
-                <a href="#" class="social-links__link" title="WhatsApp" target="_blank" rel="nofollow noopener">
-                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp"/></svg>
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-      <div class="mob-nav__service">
-        <ul class="list-nostyled  mob-nav__list  mob-nav__list--add">
-          <li class="mob-nav__item  mob-nav__item--add">
-            <p class="h5">Додатково <span class="visually-hidden">Телефони</span></p>
-            <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>
-            <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>
-          </li>
-          <li class="mob-nav__item  mob-nav__item--add">
-            <p class="h5">Пошта</p>
-            <a href="mailto:eb@rapira.ua" class="contacts-block__link">eb@rapira.ua</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
-  <script src="js/script.min.js"></script>
+<script src="js/script.min.js"></script>
 </body>
 </html>

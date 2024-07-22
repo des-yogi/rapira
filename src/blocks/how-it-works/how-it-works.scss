@@ -7,11 +7,8 @@
   }
 
   &__nav {
-    padding: 0 16px;
     margin-bottom: 32px;
-    white-space: nowrap;
-    background-color: $white;
-    border-radius: $border-radius--md;
+    overflow-x: auto;
   }
 
   &__row {
@@ -52,11 +49,13 @@
   }
 
   .nav-tabs {
-    display: flex;
+    display: inline-flex;
     flex-wrap: nowrap;
     gap: 0 32px;
-    //padding-bottom: 8px;
-    overflow-x: auto;
+    padding: 0 16px;
+    white-space: nowrap;
+    background-color: $white;
+    border-radius: $border-radius--md;
   }
 
   .nav-link {
