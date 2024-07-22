@@ -31,6 +31,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 16px;
+    height: 100%;
     position: relative;
     min-height: 200px;
     padding: 16px;
@@ -43,11 +45,15 @@
     overflow: hidden;
 
     @media (min-width: $screen-md) {
+      justify-content: initial;
+      gap: 40px;
       min-height: 300px;
       padding: 24px;
+      text-align: initial;
     }
 
     @media (min-width: $screen-xl) {
+      gap: 90px;
       min-height: 416px;
       //padding: 32px;
     }
@@ -71,19 +77,21 @@
   }
 
   &__icon {
-    width: 72px;
-    height: 72px;
-    margin-bottom: 16px;
+    width: 48px;
+    height: 48px;
+    //margin-bottom: 16px;
 
     @media (min-width: $screen-md) {
-      width: 80px;
-      height: 80px;
+      //width: 80px;
+      //height: 80px;
       //margin-bottom: 16px;
+      margin-top: 38px;
     }
 
     @media (min-width: $screen-xl) {
       width: 88px;
       height: 88px;
+      margin-top: 80px;
     }
 
     img {
@@ -106,6 +114,6 @@
   }
 
   &__card-title {
-    margin: 0 0 8px;
+    margin: 0 0 16px;
   }
 }

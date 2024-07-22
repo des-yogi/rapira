@@ -1,6 +1,9 @@
 .page-footer {
   color: $white;
   background-color: $secondary-color;
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../img/digital-map.jpg); */
 
   $block-name:                &; // #{$block-name}__element
 
@@ -68,14 +71,6 @@
     line-height: 1.6;
   }
 
-  &__social {
-
-  }
-
-  &__social-item {
-
-  }
-
   &__social-link {
     display: inline-flex;
     align-items: center;
@@ -100,29 +95,9 @@
     }
   }
 
-  &__about-col {
-
-  }
-
-  &__catalog-col {
-
-  }
-
-  &__contacts-col {
-
-  }
-
-  &__about {
-
-  }
-
   &__title {
     margin: 0 0 16px;
     font-size: 20px;
-  }
-
-  &__list {
-
   }
 
   &__list-item {
@@ -142,13 +117,5 @@
     &:focus {
       color: $main-color;
     }
-  }
-
-  &__catalog {
-
-  }
-
-  &__contacts {
-
   }
 }
