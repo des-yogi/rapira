@@ -1,0 +1,32 @@
+.vacancy-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  padding: 18px 16px 16px;
+  background-color: $white;
+  border-radius: $border-radius--lg;
+  box-shadow: $shadow;
+
+  & + & {
+    margin-top: 32px;
+  }
+
+  &__title {
+    margin: 0 0 8px;
+  }
+
+  &__location {
+    margin: 8px 0;
+  }
+
+  &__salary {
+
+    &:empty {
+      display: none;
+    }
+  }
+
+  &__more {
+    min-width: 176px;
+  }
+}

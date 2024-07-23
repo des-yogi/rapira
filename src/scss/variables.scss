@@ -45,12 +45,17 @@ $divider-color:               $main-color;
 $btn-bg:                      $main-color;
 $btn-bg--hover:               #ffe27a;
 $btn-bg--disabled:            #7a7a7a; //disabl_dark
+
+$gray-btn:                    #e8e8e8; //gray
 $gray-light:                  #d2d2d2; //disabl_light
 
 
 // Базовая типографика
 
 $font-size:                   16px;
+
+$font-size-lg:                18px;
+$font-size-xl:                20px;
 $font-size-sm:                14px;
 
 $font-size--display-1:        72px;

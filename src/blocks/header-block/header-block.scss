@@ -1,0 +1,17 @@
+.header-block {
+  margin-bottom: 56px;
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: 72px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__lead {
+    font-size: $font-size-lg;
+  }
+}

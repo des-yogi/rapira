@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Каталог</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="container  text-page  catalog">
+
+          <div class="row">
+            <div class="text-page__col">
+              @@include('blocks/header-block/header-block.html', {
+                "title": 'Каталог',
+                "lead": '<p>Наша компанія. Ще якийсь текст. Для сьорч енджину. Для нас немає нічого не можливого. Наші продукти надійні та перевірені на практиці.</p>'
+              })
+            </div>
+          </div>
+
+          <div class="catalog__inner">
+            @@include('blocks/catalog-item/catalog-item.html', {
+              'swiperSlideClass': ''
+            })
+
+            @@include('blocks/catalog-item/catalog-item.html', {
+              'swiperSlideClass': ''
+            })
+
+            @@include('blocks/catalog-item/catalog-item.html', {
+              'swiperSlideClass': ''
+            })
+          </div>
+
+        </div>
+
+        @@include('blocks/order-block/order-block.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mob-nav/mob-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

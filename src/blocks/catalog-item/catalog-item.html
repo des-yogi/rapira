@@ -1,14 +1,49 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
-@ @include('blocks/catalog-item/catalog-item.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="catalog-item">content</div>
-
+@ @include('blocks/catalog-item/catalog-item.html', {
+  'swiperSlideClass': 'swiper-slide'
+})
 -->
+
+<article class="catalog-item  @@swiperSlideClass">
+  <div class="row  catalog-item__row">
+    <div class="catalog-item__col">
+      <div class="embed-responsive embed-responsive--1-1  catalog-item__img">
+        <picture>
+          <source srcset="img/product.webp 500w,
+                          img/product.webp 650w,
+                          img/product.webp 800w,
+                          img/product.webp 1080w"
+                  sizes="(min-width: 768px) 50vw, 100vw"
+                  type="image/webp">
+          <img src="img/product.jpg"
+                srcset="img/product.jpg 500w,
+                        img/product.jpg 650w,
+                        img/product.jpg 900w,
+                        img/product.jpg 1080w"
+                sizes="(min-width: 768px) 50vw, 100vw"
+                width="1000"
+                height="1000"
+                alt="Alt Text"
+                loading="lazy">
+        </picture>
+      </div>
+    </div>
+    <div class="catalog-item__col">
+      <div class="catalog-item__text">
+        <h3 class="h4  catalog-item__subtitle">Рапіра</h3>
+        <ol>
+          <li>Радіус впливу на приймач БПЛА – до 150 метрів.</li>
+          <li>Тип перешкоди – білий шум.</li>
+          <li>Споживання – залежить від моделі РАПІРА, від 3-10 Ампер, 12 Вольт.</li>
+          <li>Загальна вихідна потужність ВЧ – залежить від моделі РАПІРА, 20-60 Ватт.</li>
+          <li>Смуги випромінювання – залежить від моделі РАПІРА, 434, 868, 915 МГц.</li>
+          <li>Ширина смуги випромінювання – від 100 МГц.</li>
+        </ol>
+        <div class="catalog-item__btn-wrapper">
+          <a href="#" class="btn">Замовити</a>
+          <a href="#" class="btn  btn--outlined">Деталі</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

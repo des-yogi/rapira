@@ -40,7 +40,14 @@
     "mob-nav": [],
     "contacts-block": [],
     "video-card": [],
-    "news-card": []
+    "news-card": [],
+    "about-card": [],
+    "header-block": [],
+    "vacancy-card": [],
+    "text-page": [],
+    "gallery": [],
+    "accordion": [],
+    "catalog": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

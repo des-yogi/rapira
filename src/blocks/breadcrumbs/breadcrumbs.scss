@@ -2,60 +2,72 @@ $line-height:                 1.375em !default;
 $text-color:                  hsl(0, 0%, 10%) !default;
 
 .breadcrumbs {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 16px;
+  margin-bottom: calc(32px - 8px);
+
+  @media (min-width: $screen-md) {
+    margin-top: 24px;
+    margin-bottom: calc(56px - 8px);
+  }
+
+  @media (min-width: $screen-xl) {
+    margin-bottom: calc(72px - 8px);
+  }
 
   $block-name:                &;
   // #{$block-name}__element
 
   &__list {
-    display: inline-flex;
-    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: nowrap;
     align-items: center;
+    padding-bottom: 8px;
+    overflow: auto;
+    //text-overflow: ellipsis;
   }
 
 
   &__item {
-    display: inline-block;
-    vertical-align: baseline;
+    display: inline-flex;
+    align-items: center;
+    //vertical-align: baseline;
     max-width: 100%;
-    margin-right: 0.6em;
-    margin-bottom: 0.5em;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    margin-right: 8px;
+    //margin-bottom: 4px;
 
     @media (min-width: $screen-md) {
       margin-bottom: 0;
     }
 
     &:not(:last-child)::after {
-      content: '|'; // U+276F, HTML-код &#10095; CSS-код  \276F - Прававя угловая скобка
+      content: '●'; // U+276F, HTML-код &#10095; CSS-код  \276F - Прававя угловая скобка
       display: inline-block;
-      margin-left: 0.8em;
-      font-weight: 700;
+      margin-left: 8px;
+      font-weight: inherit;
       color: $text-muted;
     }
 
-    &:last-child {
+    #{$block-name}__link {
 
-      #{$block-name}__link {
+      &[aria-current=page] {
         text-decoration: none;
-        color: $main-color;
+        color: $text-muted;
       }
     }
+
   }
 
   &__link {
     max-width: 100%;
-    font-size: 14px;
-    font-weight: 500;
-    color: $text-muted;
-    text-decoration: none;
+    font-size: $font-size;
+    font-weight: 400;
+    color: $link-color;
+    //text-decoration: none;
     white-space: nowrap;
 
     &:hover,
     &:focus {
-      color: $main-color;
+      color: $link-color--hover;
       //text-decoration: none;
     }
   }

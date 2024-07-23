@@ -1,0 +1,19 @@
+.catalog {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__inner {
+
+    & > * + * {
+      margin-top: 48px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 56px;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-top: 72px;
+      }
+    }
+  }
+}

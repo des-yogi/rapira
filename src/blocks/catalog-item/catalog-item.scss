@@ -1,9 +1,52 @@
-// В этом файле должны быть стили для БЭМ-блока catalog-item, его элементов, 
-// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
-// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
-
 .catalog-item {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__row {
+    gap: 24px 0;
+  }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 16px);
+    @include col(xl, 5, $grid-columns, 32px);
+  }
+
+  &__img {
+    width: calc(100% - 14px);
+    margin: 0 auto;
+    border-radius: $border-radius--md;
+    box-shadow: $shadow;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 16px;
+  }
+
+  &__btn-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+
+    @media (min-width: $screen-xl) {
+      gap: 16px 32px;
+      margin-top: 40px;
+    }
+
+    .btn {
+      flex: 1 1 100%;
+      width: 100%;
+
+      @media (min-width: $screen-md) {
+        flex-basis: calc(50% - 8px);
+        max-width: 175px;
+      }
+    }
+  }
 }
