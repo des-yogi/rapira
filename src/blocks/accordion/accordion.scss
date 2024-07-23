@@ -1,0 +1,72 @@
+.accordion {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__item {
+    margin: 32px 0 0;
+    background-color: $white;
+    border-radius: $border-radius--md;
+    box-shadow: $shadow;
+  }
+
+  &__header {
+    margin: 0;
+    font-size: $font-size-xl;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    padding: 16px 24px;
+    font-family: $font-family;
+    font-size: inherit;
+    line-height: 1.5;
+    text-align: initial;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+
+      #{$block-name}__icon {
+        border-color: $text-muted;
+        background-color: darken($gray-btn, 7%);
+      }
+    }
+
+    &[aria-expanded=true] {
+
+      #{$block-name}__icon {
+        transform: rotate(-90deg);
+        border-color: $text-muted;
+        background-color: darken($gray-btn, 7%);
+      }
+    }
+  }
+
+  &__body {
+    padding: 8px 24px 16px;
+  }
+
+  &__cap {
+    flex: 1 1 auto;
+  }
+
+  &__icon {
+    flex: 0 0 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    transform: rotate(90deg);
+    background-color: $gray-btn;
+    border: 2px solid $gray-btn;
+    border-radius: 50%;
+    transition: all $transition-time;
+  }
+}

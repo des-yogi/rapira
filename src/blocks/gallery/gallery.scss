@@ -1,0 +1,46 @@
+.gallery {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__col {
+    @include col(xs, 6);
+    @include col(md, 4, $grid-columns, 16px);
+    @include col(xl, 3, $grid-columns, 32px);
+  }
+
+  &__section {
+
+    & + & {
+      margin-top: 32px;
+
+      @media (min-width: $screen-md) {
+        margin-top: 56px;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin-top: 72px;
+      }
+    }
+  }
+
+  &__section-name {
+    margin: 0 0 16px;
+  }
+
+  &__inner-row {
+    margin-top: 24px;
+    gap: 8px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 16px 0;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 32px 0;
+    }
+  }
+
+  &__item {
+    border-radius: $border-radius--md;
+  }
+}

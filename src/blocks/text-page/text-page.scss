@@ -1,0 +1,23 @@
+.text-page {
+  margin: calc(32px - 8px) 0 48px;
+
+  @media (min-width: $screen-md) {
+    margin: calc(56px - 8px) 0 56px;
+  }
+
+  @media (min-width: $screen-xl) {
+    margin: calc(72px - 8px) 0 72px;
+  }
+
+  $block-name:                &; // #{$block-name}__element
+
+  // &__row {
+
+  // }
+
+  &__col {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 16px);
+    @include col(xl, 8, $grid-columns, 32px);
+  }
+}

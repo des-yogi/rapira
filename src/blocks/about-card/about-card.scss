@@ -1,0 +1,59 @@
+.about-card {
+
+  $block-name:                &; // #{$block-name}__element
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  @media (min-width: $screen-md) {
+    flex-wrap: initial;
+  }
+
+  @media (min-width: $screen-xl) {
+    gap: 32px;
+  }
+
+  & + & {
+    margin-top: 32px;
+  }
+
+  &__wrapper {
+    margin: 56px 0;
+
+    @media (min-width: $screen-xl) {
+      margin: 72px 0;
+    }
+  }
+
+  &__general-heading {
+    margin: 0 0 18px;
+  }
+
+  &__img {
+    border-radius: $border-radius--lg;
+
+    @media (min-width: $screen-md) {
+      flex: 0 0 280px;
+    }
+  }
+
+  &__text {
+
+    @media (min-width: $screen-md) {
+      flex: 1 1 auto;
+    }
+
+    p {
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    margin: 0 0 10px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 16px;
+    }
+  }
+}

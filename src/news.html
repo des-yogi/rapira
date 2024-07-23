@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Новини</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="container  text-page  news">
+
+          <div class="row">
+            <div class="text-page__col">
+              @@include('blocks/header-block/header-block.html', {
+                "title": 'Новини',
+                "lead": '<p>Тут буде знаходитись текст для сьорч енджину. Друзі, ми переходимо на виготовлення пультів керування з алюмінію. Це підвищить їх стійкість під час фізичного впливу, та забезпечує екранування індикаторів живлення та току</p>'
+              })
+            </div>
+          </div>
+
+          <div class="news-block">
+            <div class="row  news-block__row">
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+              <div class="news-block__col">
+                @@include('blocks/news-card/news-card.html')
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        @@include('blocks/order-block/order-block.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mob-nav/mob-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

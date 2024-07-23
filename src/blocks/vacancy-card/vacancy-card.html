@@ -1,0 +1,18 @@
+<!--DEV
+@ @include('blocks/vacancy-card/vacancy-card.html', {
+  "title": "Технічний директор",
+  "text": "Шукаємо досвідченого технічного директора для керівництва нашими інноваційними проектами. Обов'язки включають розробку технологічної стратегії, управління командою інженерів, впровадження нових рішень та забезпечення високої якості продуктів."
+})
+-->
+
+<div class="vacancy-card" role="listitem">
+  <h2 class="h3  vacancy-card__title">@@title</h2>
+  <p class="vacancy-card__location">Місто: Київ</p>
+  <p class="vacancy-card__descr">@@text</p>
+  <p class="vacancy-card__note">
+    <span class="vacancy-card__salary">Заробітня плата:&emsp;</span><strong>30 000 - 40 000 ₴</strong>
+  </p>
+  <p>
+    <a href="#" class="btn  vacancy-card__more">Детальніше</a>
+  </p>
+</div>

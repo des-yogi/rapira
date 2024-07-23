@@ -9,137 +9,19 @@
 
   <div class="swiper  product-slider__slider">
     <div class="swiper-wrapper">
-      <article class="swiper-slide  product-slider__slide">
-        <div class="row  product-slider__row">
-          <div class="product-slider__col">
-            <div class="embed-responsive embed-responsive--1-1  product-slider__img">
-              <picture>
-                <source srcset="img/product.webp 500w,
-                                img/product.webp 650w,
-                                img/product.webp 800w,
-                                img/product.webp 1000w"
-                        sizes="(min-width: 768px) 50vw, 100vw"
-                        type="image/webp">
-                <img src="img/product.jpg"
-                      srcset="img/product.jpg 500w,
-                              img/product.jpg 650w,
-                              img/product.jpg 900w,
-                              img/product.jpg 1000w"
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      width="488"
-                      height="488"
-                      alt="Alt Text"
-                      loading="lazy">
-              </picture>
-            </div>
-          </div>
-          <div class="product-slider__col">
-            <div class="product-slider__text">
-              <h3 class="h4  product-slider__subtitle">Рапіра</h3>
-              <ol>
-                <li>Радіус впливу на приймач БПЛА – до 150 метрів.</li>
-                <li>Тип перешкоди – білий шум.</li>
-                <li>Споживання – залежить від моделі РАПІРА, від 3-10 Ампер, 12 Вольт.</li>
-                <li>Загальна вихідна потужність ВЧ – залежить від моделі РАПІРА, 20-60 Ватт.</li>
-                <li>Смуги випромінювання – залежить від моделі РАПІРА, 434, 868, 915 МГц.</li>
-                <li>Ширина смуги випромінювання – від 100 МГц.</li>
-              </ol>
-              <div class="product-slider__btn-wrapper">
-                <a href="#" class="btn">Замовити</a>
-                <a href="#" class="btn  btn--outlined">Деталі</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
 
-      <article class="swiper-slide  product-slider__slide">
-        <div class="row  product-slider__row">
-          <div class="product-slider__col">
-            <div class="embed-responsive embed-responsive--1-1  product-slider__img">
-              <picture>
-                <source srcset="img/product.webp 500w,
-                                img/product.webp 650w,
-                                img/product.webp 800w,
-                                img/product.webp 1000w"
-                        sizes="(min-width: 768px) 50vw, 100vw"
-                        type="image/webp">
-                <img src="img/product.jpg"
-                      srcset="img/product.jpg 500w,
-                              img/product.jpg 650w,
-                              img/product.jpg 900w,
-                              img/product.jpg 1000w"
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      width="488"
-                      height="488"
-                      alt="Alt Text"
-                      loading="lazy">
-              </picture>
-            </div>
-          </div>
-          <div class="product-slider__col">
-            <div class="product-slider__text">
-              <h3 class="h4  product-slider__subtitle">Рапіра</h3>
-              <ol>
-                <li>Радіус впливу на приймач БПЛА – до 150 метрів.</li>
-                <li>Тип перешкоди – білий шум.</li>
-                <li>Споживання – залежить від моделі РАПІРА, від 3-10 Ампер, 12 Вольт.</li>
-                <li>Загальна вихідна потужність ВЧ – залежить від моделі РАПІРА, 20-60 Ватт.</li>
-                <li>Смуги випромінювання – залежить від моделі РАПІРА, 434, 868, 915 МГц.</li>
-                <li>Ширина смуги випромінювання – від 100 МГц.</li>
-              </ol>
-              <div class="product-slider__btn-wrapper">
-                <a href="#" class="btn">Замовити</a>
-                <a href="#" class="btn  btn--outlined">Деталі</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+      @@include('../../blocks/catalog-item/catalog-item.html', {
+        'swiperSlideClass': 'swiper-slide'
+      })
 
-      <article class="swiper-slide  product-slider__slide">
-        <div class="row  product-slider__row">
-          <div class="product-slider__col">
-            <div class="embed-responsive embed-responsive--1-1  product-slider__img">
-              <picture>
-                <source srcset="img/product.webp 500w,
-                                img/product.webp 650w,
-                                img/product.webp 800w,
-                                img/product.webp 1000w"
-                        sizes="(min-width: 768px) 50vw, 100vw"
-                        type="image/webp">
-                <img src="img/product.jpg"
-                      srcset="img/product.jpg 500w,
-                              img/product.jpg 650w,
-                              img/product.jpg 900w,
-                              img/product.jpg 1000w"
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      width="488"
-                      height="488"
-                      alt="Alt Text"
-                      loading="lazy">
-              </picture>
-            </div>
-          </div>
-          <div class="product-slider__col">
-            <div class="product-slider__text">
-              <h3 class="h4  product-slider__subtitle">Рапіра</h3>
-              <ol>
-                <li>Радіус впливу на приймач БПЛА – до 150 метрів.</li>
-                <li>Тип перешкоди – білий шум.</li>
-                <li>Споживання – залежить від моделі РАПІРА, від 3-10 Ампер, 12 Вольт.</li>
-                <li>Загальна вихідна потужність ВЧ – залежить від моделі РАПІРА, 20-60 Ватт.</li>
-                <li>Смуги випромінювання – залежить від моделі РАПІРА, 434, 868, 915 МГц.</li>
-                <li>Ширина смуги випромінювання – від 100 МГц.</li>
-              </ol>
-              <div class="product-slider__btn-wrapper">
-                <a href="#" class="btn">Замовити</a>
-                <a href="#" class="btn  btn--outlined">Деталі</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
+      @@include('../../blocks/catalog-item/catalog-item.html', {
+        'swiperSlideClass': 'swiper-slide'
+      })
+
+      @@include('../../blocks/catalog-item/catalog-item.html', {
+        'swiperSlideClass': 'swiper-slide'
+      })
+
     </div>
 
     <div class="container  swiper__controls  swiper__controls--static  swiper__controls--light">
