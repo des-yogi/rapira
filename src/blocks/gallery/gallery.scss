@@ -21,6 +21,22 @@
         margin-top: 72px;
       }
     }
+
+    &--apart {
+      margin: 64px 0;
+
+      @media (min-width: $screen-md) {
+        margin: 80px 0;
+      }
+
+      @media (min-width: $screen-xl) {
+        margin: 100px 0;
+      }
+
+      #{$block-name}__title {
+        text-align: initial;
+      }
+    }
   }
 
   &__section-name {

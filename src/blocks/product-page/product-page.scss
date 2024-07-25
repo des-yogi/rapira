@@ -1,0 +1,109 @@
+.product-page {
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__intro {
+    margin-bottom: 64px;
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 80px;
+    }
+
+    @media (min-width: $screen-xl) {
+      margin-bottom: 100px;
+    }
+
+    .row {
+      gap: 24px 0;
+
+      @media (min-width: $screen-md) {
+        gap: 32px 0;
+      }
+    }
+  }
+
+  &__col-slider,
+  &__col-text {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 16px);
+    @include col(lg, 6, $grid-columns, 16px);
+    @include col(xl, 6, $grid-columns, 32px);
+  }
+
+  &__text {
+
+    h1 {
+      margin: 0 0 16px;
+    }
+  }
+
+  &__order-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 24px 0;
+
+    @media (min-width: $screen-md) {
+      flex-direction: initial;
+      align-items: center;
+      gap: 32px;
+      //justify-content: space-between;
+      margin: 32px 0;
+    }
+  }
+
+  &__price {
+    margin: 0;
+  }
+
+  &__price-num {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 8px;
+    font-weight: 700;
+    font-size: x-large;
+  }
+
+  &__link-wrapper {
+    margin: 0;
+
+    /* @media (min-width: $screen-md) {
+      flex: 0 0 auto;
+    } */
+
+    .btn {
+      min-width: 176px;
+
+      @media (max-width: $screen-md - 1) {
+        width: 100%;
+      }
+    }
+  }
+
+  // .how-it-works__nav {
+  //   margin-bottom: 16px;
+  // }
+
+  .tab-content {
+    padding: 16px;
+    background-color: $white;
+    border-radius: #border-radius--md;
+    box-shadow: $shadow;
+  }
+
+  .tab-pane {
+    max-height: 510px;
+    overflow-y: auto;
+  }
+
+  &__doc-title {
+    margin-top: 0;
+  }
+
+  &__accordion-pane {
+
+    & > * {
+      max-width: 880px;
+    }
+  }
+}

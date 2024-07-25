@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function(){
+/*document.addEventListener('DOMContentLoaded', function(){
 
   var links = document.querySelectorAll('[href^="#"][data-scroll-link]');
   for (var i = 0; i < links.length; i++) {
@@ -53,3 +53,4 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
 });
+*/

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Контакти</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <div> <!-- ex-Main -->
+
+        <div class="container  order-block"
+          style="background-image: url('img/order-block-bg.webp')"
+          data-bg="img/order-block-bg.jpg"
+          data-bg-webp="img/order-block-bg.webp">
+
+          @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+          <main class="main">
+
+            <div class="row">
+              <div class="order-block__col-header">
+                @@include('blocks/header-block/header-block.html', {
+                  "title": 'Контакти',
+                  "lead": '<p>Наша компанія. Ще якийсь текст. Для сьорч енджину. Для нас немає нічого не можливого. Наші продукти надійні та перевірені на практиці.</p>'
+                })
+              </div>
+            </div>
+
+            <div class="row  order-block__row">
+
+              <div class="order-block__phones-col">
+
+                <div class="order-block__phones">
+                  <p class="h3  order-block__subtitle">Замовити можна:</p>
+
+                  <p>По телефонам:</p>
+                  <ul class="list-nostyled  order-block__list">
+                    <li class="order-block__list-item">
+                      <a href="tel:+380965828787" class="order-block__list-link">+38 (096) 5828787</a>
+                    </li>
+                    <li class="order-block__list-item">
+                      <a href="tel:+380965828787" class="order-block__list-link">+38 (096) 5828787</a>
+                    </li>
+                    <li class="order-block__list-item">
+                      <a href="tel:+380965828787" class="order-block__list-link">+38 (096) 5828787</a>
+                    </li>
+                  </ul>
+
+                  <p>Написавши листа на Email:</p>
+                  <ul class="list-nostyled  order-block__list">
+                    <li class="order-block__list-item">
+                      <a href="mailto:reb@rapira.ua" class="order-block__list-link">reb@rapira.ua</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="order-block__form-col">
+                <section class="order-block__form-wrapper">
+                  <h3 class="visually-hidden">Форма зв'язку</h3>
+
+                  <p class="h3  order-block__subtitle">Або через форму зв'язку:</p>
+                  <p class="order-block__legend"><sup>*</sup> вказані поля обов’язкові для заповнення</p>
+
+                  <form class="order-block__form" action="#" method="post">
+
+                    <label class="field-text">
+                      <span class="field-text__name">ПІБ <sup>*</sup></span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" name="name" value="" placeholder="Ваше ім’я">
+                        <span class="field-text__help-text" data-error="name">Текст ошибки</span>
+                      </span>
+                    </label>
+
+                    <label class="field-text">
+                      <span class="field-text__name">Телефон:</span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input  phone-mask" type="tel" name="tel" value="">
+                        <span class="field-text__help-text" data-error="tel"></span>
+                      </span>
+                    </label>
+
+                    <label class="field-text">
+                      <span class="field-text__name">E-mail <sup>*</sup></span>
+                      <span class="field-text__input-wrap">
+                        <input class="field-text__input" type="text" name="email" value="" placeholder="company@domen.com">
+                        <span class="field-text__help-text" data-error="email"></span>
+                      </span>
+                    </label>
+
+                    <label class="field-text">
+                      <span class="field-text__name">Ваше повідомлення</span>
+                      <span class="field-text__input-wrap">
+                        <textarea class="field-text__input" name="message" rows="4" placeholder="Ваше повідомлення"></textarea>
+                        <span class="field-text__help-text" data-error="message"></span>
+                      </span>
+                    </label>
+
+                    <div class="order-form__agreement">
+
+                      <div class="field-checkbox">
+                        <label class="field-checkbox__name" style="color: #ffffff;">
+                          <input class="field-checkbox__input" type="checkbox" name="agreement" checked>
+                          <span class="field-checkbox__name-text">Я погоджуюсь на обробку <a href="#" style="color:inherit;">персональних даних</a></span>
+                        </label>
+                      </div>
+
+                      <div class="order-form__submit-wrapper">
+                        <img src="img/reCaptcha.gif" width="304" alt="">
+                        <button class="btn  order-form__submit-btn" type="submit">Надіслати</button>
+                      </div>
+
+                    </div>
+
+                  </form>
+                </section>
+
+              </div>
+
+            </div>
+
+          </main>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mob-nav/mob-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
