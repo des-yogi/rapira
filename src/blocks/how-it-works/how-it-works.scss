@@ -9,6 +9,7 @@
   &__nav {
     margin-bottom: 32px;
     overflow-x: auto;
+    box-shadow: $shadow;
   }
 
   &__row {
@@ -49,13 +50,15 @@
   }
 
   .nav-tabs {
-    display: inline-flex;
+    //display: inline-flex;
+    display: flex;
     flex-wrap: nowrap;
     gap: 0 32px;
     padding: 0 16px;
     white-space: nowrap;
     background-color: $white;
     border-radius: $border-radius--md;
+
   }
 
   .nav-link {

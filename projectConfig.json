@@ -47,7 +47,13 @@
     "text-page": [],
     "gallery": [],
     "accordion": [],
-    "catalog": []
+    "catalog": [],
+    "news-page": [],
+    "news-article": [],
+    "operation-principle": [],
+    "product-page": [],
+    "product-img-slider": [],
+    "manual-link": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

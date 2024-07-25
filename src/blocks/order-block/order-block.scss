@@ -69,4 +69,48 @@
       color: $main-color;
     }
   }
+
+  &__col-header {
+    @include col(xs, 12);
+    @include col(md, 12, $grid-columns, 16px);
+    @include col(xl, 8, $grid-columns, 32px);
+  }
+
+  .main {
+    position: relative;
+    z-index: 1;
+  }
+
+  .breadcrumbs {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    color: $white;
+  }
+
+  .breadcrumbs__item {
+
+    &:not(:last-child) {
+
+      &::after {
+        color: inherit;
+      }
+    }
+  }
+
+  .breadcrumbs__link {
+    color: inherit;
+
+    &:hover,
+    &:focus {
+
+      &:not([aria-current=page]) {
+        color: $main-color;
+      }
+    }
+
+    &[aria-current=page] {
+      color: rgba($white, 0.5);
+    }
+  }
 }
