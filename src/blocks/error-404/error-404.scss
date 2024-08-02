@@ -1,0 +1,53 @@
+.error-404 {
+
+  $block-name:                &; // #{$block-name}__element
+
+  .row {
+    gap: 48px 0;
+  }
+
+  &__col-text {
+    @include col(xs, 12);
+    @include col-offset(md, 2);
+    @include col(md, 8, $grid-columns, 16px);
+    @include col-offset(xl, 1);
+    @include col(xl, 5, $grid-columns, 32px);
+  }
+
+  &__col-img {
+    @include col-offset(xs, 2);
+    @include col(xs, 8);
+    @include col-offset(md, 2);
+    @include col(md, 8, $grid-columns, 16px);
+    @include col-offset(xl, 0);
+    @include col(xl, 6, $grid-columns, 32px);
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $screen-xl) {
+      order: -1;
+    }
+  }
+
+  &__text {
+    max-width: 600px;
+    margin: auto;
+
+    @media (max-width: $screen-xl - 1) {
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 48px;
+    }
+
+    .h3 {
+      margin-top: 0;
+    }
+  }
+
+  &__info {
+    font-size: $font-size-xl;
+    hyphens: none;
+  }
+}

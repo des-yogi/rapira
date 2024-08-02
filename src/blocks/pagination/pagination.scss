@@ -17,6 +17,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &:has(.pagination__list:empty) {
+    display: none;
+  }
+
   &__list {
     display: flex;
     flex-wrap: wrap;
@@ -27,7 +31,6 @@
   }
 
   &__item {
-    //margin-right: 0.5em;
 
     &:first-child {
       margin-right: 16px;

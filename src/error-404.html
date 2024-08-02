@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Error 404</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      <main class="main">
+
+        <div class="container  text-page  error-404">
+          <div class="row">
+
+            <div class="error-404__col-text">
+              <div class="error-404__text">
+                <h1>
+                  <span>Упс…</span>
+                  <span class="visually-hidden">Помилка 404</span>
+                  <p class="h3">Сторінка, яку ви шукали не була знайдена</p>
+                </h1>
+
+                <p class="error-404__info">Якщо потрібна допомога, на сторінці <a href="#">Контакти</a> ви знайдете як зв’язатися з нами або можете повернутися</p>
+
+                <a href="#" class="btn" style="min-width:176px; margin-top:16px;">На головну</a>
+              </div>
+            </div>
+
+            <div class="error-404__col-img">
+              <img src="img/error-404.svg" alt="" width="584" height="679">
+            </div>
+
+          </div>
+        </div>
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mob-nav/mob-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
