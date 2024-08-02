@@ -53,7 +53,8 @@
     "operation-principle": [],
     "product-page": [],
     "product-img-slider": [],
-    "manual-link": []
+    "manual-link": [],
+    "error-404": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
