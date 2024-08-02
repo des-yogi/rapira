@@ -13,3 +13,4 @@
 * https://des-yogi.github.io/rapira/vacancy
 * https://des-yogi.github.io/rapira/vacancy-info
 * https://des-yogi.github.io/rapira/warranty
+* https://des-yogi.github.io/rapira/error-404
