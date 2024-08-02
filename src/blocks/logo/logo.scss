@@ -4,11 +4,15 @@
 
   display: inline-flex;
   align-items: center;
-  white-space: nowrap;
 
   &__link {
+    flex: 0 0 48px;
     display: inline-flex;
     align-items: center;
+
+    @media (min-width: $screen-xl) {
+      flex: 0 0 88px;
+    }
   }
 
   &__img {
@@ -40,6 +44,7 @@
     font-size: 18px;
     font-weight: 500;
     line-height: 1;
+    white-space: nowrap;
 
     @media (min-width: $screen-md) {
       margin-right: 16px;
@@ -59,6 +64,7 @@
   }
 
   &__slogan {
+    flex: 1 1 auto;
 
     @media (min-width: $screen-xl) {
       display: block;
