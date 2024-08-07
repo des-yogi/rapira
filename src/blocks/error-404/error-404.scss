@@ -3,7 +3,11 @@
   $block-name:                &; // #{$block-name}__element
 
   .row {
-    gap: 48px 0;
+    gap: 64px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 80px 0;
+    }
   }
 
   &__col-text {
@@ -15,17 +19,26 @@
   }
 
   &__col-img {
-    @include col-offset(xs, 2);
-    @include col(xs, 8);
+    @include col-offset(xs, 1);
+    @include col(xs, 10);
     @include col-offset(md, 2);
     @include col(md, 8, $grid-columns, 16px);
-    @include col-offset(xl, 0);
-    @include col(xl, 6, $grid-columns, 32px);
+    @include col-offset(xl, 1);
+    @include col(xl, 4, $grid-columns, 32px);
     display: flex;
     justify-content: center;
 
     @media (min-width: $screen-xl) {
       order: -1;
+    }
+
+    img {
+      transform: scale(-1, 1);
+      max-width: 382px;
+
+      @media (max-width: $screen-xl - 1) {
+        max-width: 285px;
+      }
     }
   }
 
