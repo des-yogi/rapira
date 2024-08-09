@@ -7,8 +7,10 @@
   }
 
   &__nav {
+    padding: 0 16px;
     margin-bottom: 32px;
-    overflow-x: auto;
+    background-color: $white;
+    border-radius: $border-radius--md;
     box-shadow: $shadow;
   }
 
@@ -49,21 +51,22 @@
     }
   }
 
+  .nav-tabs__wrapper {
+    overflow-x: auto;
+  }
+
   .nav-tabs {
     //display: inline-flex;
     display: flex;
     flex-wrap: nowrap;
     gap: 0 32px;
-    padding: 0 16px;
+    //padding: 0 16px;
     white-space: nowrap;
-    background-color: $white;
-    border-radius: $border-radius--md;
-
   }
 
   .nav-link {
     position: relative;
-    padding: 8px 0 16px;
+    padding: 16px 0 20px;
     font-family: inherit;
     user-select: none;
     cursor: pointer;
