@@ -365,7 +365,7 @@
                       <a href="tel:+380965828787" class="order-block__list-link">+38 (096) 5828787</a>
                     </li>
                   </ul>
-                  <p>Написавши листа на Email:</p>
+                  <p style="margin:22px 0 12px;">Написавши листа на Email:</p>
                   <ul class="list-nostyled  order-block__list">
                     <li class="order-block__list-item">
                       <a href="mailto:reb@rapira.ua" class="order-block__list-link">reb@rapira.ua</a>
@@ -378,28 +378,34 @@
                   <h3 class="visually-hidden">Форма зв'язку</h3>
                   <p class="h3  order-block__subtitle">Або через форму зв'язку:</p>
                   <p class="order-block__legend"><sup>*</sup> вказані поля обов’язкові для заповнення</p>
-                  <form class="order-block__form" action="#" method="post">
+                  <form class="order-block__form  order-form" action="#" method="post">
                     <label class="field-text">
                       <span class="field-text__name">ПІБ <sup>*</sup></span>
                       <span class="field-text__input-wrap">
                         <input class="field-text__input" type="text" name="name" value placeholder="Ваше ім’я">
-                        <span class="field-text__help-text" data-error="name">Текст ошибки</span>
+                        <span class="field-text__help-text" data-error="name">Текст помилки</span>
                       </span>
                     </label>
-                    <label class="field-text">
-                      <span class="field-text__name">Телефон:</span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input  phone-mask" type="tel" name="tel" value>
-                        <span class="field-text__help-text" data-error="tel"></span>
-                      </span>
-                    </label>
-                    <label class="field-text">
-                      <span class="field-text__name">E-mail <sup>*</sup></span>
-                      <span class="field-text__input-wrap">
-                        <input class="field-text__input" type="text" name="email" value placeholder="company@domen.com">
-                        <span class="field-text__help-text" data-error="email"></span>
-                      </span>
-                    </label>
+                    <div class="row  order-form__inner-row">
+                      <div class="order-form__field-col">
+                        <label class="field-text">
+                          <span class="field-text__name">Телефон: <sup></sup></span>
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input  phone-mask" type="tel" name="tel" value>
+                            <span class="field-text__help-text" data-error="tel"></span>
+                          </span>
+                        </label>
+                      </div>
+                      <div class="order-form__field-col">
+                        <label class="field-text">
+                          <span class="field-text__name">E-mail <sup>*</sup></span>
+                          <span class="field-text__input-wrap">
+                            <input class="field-text__input" type="text" name="email" value placeholder="company@domen.com">
+                            <span class="field-text__help-text" data-error="email"></span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
                     <label class="field-text">
                       <span class="field-text__name">Ваше повідомлення</span>
                       <span class="field-text__input-wrap">
@@ -426,7 +432,130 @@
           </section>
       </main>
     </div>
-    <div class="page__footer-wrapper">      <!-- Рапіра - високі технології, що рятують життя на передовій -->      <footer class="container  page-footer">        <div class="row  page-footer__row">          <div class="page-footer__presentation-col">            <div class="page-footer__presentation">              <div class="row">                <div class="page-footer__logo-col">                  <div class="logo  logo--footer">                    <span class="logo__name">Рапіра</span>                    <a href="index.html" class="logo__link">                      <img class="logo__img" src="img/rapira-logo.svg" alt="Rapira logo" width="88" height="88">                    </a>                    <span class="logo__flash">                      <img src="img/rapira-flash.svg" width="106" height="48" alt>                    </span>                    <span class="logo__slogan">Знаємо все про РЕБ</span>                    <!-- <span class="logo__slogan">We know everything about EW</span> -->                  </div>                  <p class="page-footer__text">                    Lorem ipsum dolor sit amet consectetur adipisicing, elit. Non fugiat libero quod, obcaecati, perspiciatis enim.                  </p>                </div>                <div class="page-footer__social-col">                  <ul class="list-nostyled  page-footer__social">                    <li class="page-footer__social-item">                      <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">                        <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"/></svg>                        <span>Facebook</span>                      </a>                    </li>                    <li class="page-footer__social-item">                      <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">                        <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram"/></svg>                        <span>Telegram</span>                      </a>                    </li>                    <li class="page-footer__social-item">                      <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">                        <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#youtube"/></svg>                        <span>Youtube</span>                      </a>                    </li>                  </ul>                </div>              </div>            </div>          </div>          <div class="page-footer__nav-col">            <div class="page-footer__nav-wrapper">              <div class="row">                <div class="page-footer__about-col">                  <section class="page-footer__about">                    <h3 class="page-footer__title">Про компанію</h3>                    <ul class="list-nostyled  page-footer__list">                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">Гарантія та сервіс</a>                      </li>                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">Вакансії</a>                      </li>                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">Нас радять</a>                      </li>                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">FAQ</a>                      </li>                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">Новини</a>                      </li>                    </ul>                  </section>                </div>                <div class="page-footer__catalog-col">                  <section class="page-footer__catalog">                    <h3 class="page-footer__title">Каталог</h3>                    <ul class="list-nostyled  page-footer__list">                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">Рапіра</a>                      </li>                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">Їжак</a>                      </li>                      <li class="page-footer__list-item">                        <a href="#" class="page-footer__list-link">На замовлення</a>                      </li>                    </ul>                  </section>                </div>                <div class="page-footer__contacts-col">                  <section class="page-footer__contacts">                    <h3 class="page-footer__title" id="pTel">Телефони</h3>                    <ul class="list-nostyled  page-footer__list" aria-labelledby="pTel">                      <li class="page-footer__list-item">                        <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>                      </li>                      <li class="page-footer__list-item">                        <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>                      </li>                      <li class="page-footer__list-item">                        <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>                      </li>                    </ul>                    <h3 class="page-footer__title" id="pMail">Пошта</h3>                    <ul class="list-nostyled  page-footer__list" aria-labelledby="pMail">                      <li class="page-footer__list-item">                        <a href="mailto:" class="page-footer__list-link">reb@rapira.ua</a>                      </li>                    </ul>                  </section>                </div>              </div>            </div>          </div>        </div>        <div class="page-footer__copyrights">          <!--DEV          @ @include('blocks/copyrights/copyrights.html')          -->          <p class="copyrights">            <span class="copyrights__owner">              <span>@ 2024 ТОВ “ІМК Інжиниринг”.</span>              <a href="#">Політика конфіденційності.</a>            </span>            <a href="#" class="copyrights__dev" title="IT-Doors, розробник">              <img src="img/itdoors-logo.svg" alt="IT-Doors logo" width="75" height="28" loading="lazy">            </a>          </p>        </div>      </footer>    </div>
+    <div class="page__footer-wrapper">
+      <!-- Рапіра - високі технології, що рятують життя на передовій -->
+      <footer class="container  page-footer">
+        <div class="row  page-footer__row">
+          <div class="page-footer__presentation-col">
+            <div class="page-footer__presentation">
+              <div class="row">
+                <div class="page-footer__logo-col">
+                  <div class="logo  logo--footer">
+                    <span class="logo__name">Рапіра</span>
+                    <a href="index.html" class="logo__link">
+                      <img class="logo__img" src="img/rapira-logo.svg" alt="Rapira logo" width="88" height="88">
+                    </a>
+                    <span class="logo__flash">
+                      <img src="img/rapira-flash.svg" width="106" height="48" alt>
+                    </span>
+                    <span class="logo__slogan">Знаємо все про РЕБ</span>
+                    <!-- <span class="logo__slogan">We know everything about EW</span> -->
+                  </div>
+                  <p class="page-footer__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing, elit. Non fugiat libero quod, obcaecati, perspiciatis enim.
+                  </p>
+                </div>
+                <div class="page-footer__social-col">
+                  <ul class="list-nostyled  page-footer__social">
+                    <li class="page-footer__social-item">
+                      <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">
+                        <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#facebook"/></svg>
+                        <span>Facebook</span>
+                      </a>
+                    </li>
+                    <li class="page-footer__social-item">
+                      <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">
+                        <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram"/></svg>
+                        <span>Telegram</span>
+                      </a>
+                    </li>
+                    <li class="page-footer__social-item">
+                      <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">
+                        <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#youtube"/></svg>
+                        <span>Youtube</span>
+                      </a>
+                    </li>
+                    <li class="page-footer__social-item">
+                      <a href="#" class="page-footer__social-link" target="_blank" rel="nofollow noopener">
+                        <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#instagram"/></svg>
+                        <span>Instagram</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="page-footer__nav-col">
+            <div class="page-footer__nav-wrapper">
+              <div class="row">
+                <div class="page-footer__about-col">
+                  <section class="page-footer__about">
+                    <h3 class="page-footer__title">Про компанію</h3>
+                    <ul class="list-nostyled  page-footer__list">
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">Гарантія та сервіс</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">Вакансії</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">Нас радять</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">FAQ</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">Новини</a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="page-footer__catalog-col">
+                  <section class="page-footer__catalog">
+                    <h3 class="page-footer__title">Каталог</h3>
+                    <ul class="list-nostyled  page-footer__list">
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">Рапіра</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">Їжак</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="#" class="page-footer__list-link">На замовлення</a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+                <div class="page-footer__contacts-col">
+                  <section class="page-footer__contacts">
+                    <h3 class="page-footer__title" id="pTel">Телефони</h3>
+                    <ul class="list-nostyled  page-footer__list" aria-labelledby="pTel">
+                      <li class="page-footer__list-item">
+                        <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>
+                      </li>
+                      <li class="page-footer__list-item">
+                        <a href="tel:+380965828787" class="page-footer__list-link">+38 (096) 5828787</a>
+                      </li>
+                    </ul>
+                    <h3 class="page-footer__title" id="pMail">Пошта</h3>
+                    <ul class="list-nostyled  page-footer__list" aria-labelledby="pMail">
+                      <li class="page-footer__list-item">
+                        <a href="mailto:" class="page-footer__list-link">reb@rapira.ua</a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer__copyrights">          <p class="copyrights">            <span class="copyrights__owner">              <span>@ 2024 ТОВ “ІМК Інжиниринг”.</span>              <a href="#">Політика конфіденційності.</a>            </span>            <a href="#" class="copyrights__dev" title="IT-Doors, розробник">              <img src="img/itdoors-logo.svg" alt="IT-Doors logo" width="75" height="28" loading="lazy">            </a>          </p>        </div>
+      </footer>
+    </div>
   </div>  <div class="offcanvas offcanvas-end  mob-nav" tabindex="-1" id="mobMenu" aria-labelledby="mobMenuLabel">    <div class="offcanvas-header  mob-nav__header">      <h4 class="visually-hidden" id="mobMenuLabel">Мобільне меню</h4>      <img src="img/rapira-logo.svg" alt="Site logo" width="48" height="48" loading="lazy">      <button class="mob-nav__close" data-bs-dismiss="offcanvas" aria-label="Закрити меню">        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" aria-hidden="true"><path d="m20.69,11.28l-6.74-6.48c-.41-.4-1.08-.4-1.5,0-.41.4-.41,1.04,0,1.44l4.93,4.74H3v2.04h14.39l-4.93,4.74c-.41.4-.41,1.04,0,1.44.41.4,1.08.4,1.5,0l6.74-6.48c.41-.4.41-1.04,0-1.44Z"/></svg>      </button>    </div>    <div class="offcanvas-body  mob-nav__body">      <nav class="mob-nav__nav">        <ul class="list-nostyled  mob-nav__list">          <li class="mob-nav__item  active">            <a class="mob-nav__link">              <span>Головна</span>            </a>          </li>          <li class="mob-nav__item">            <a href="#" class="mob-nav__link">              <span>Про компанію</span>            </a>          </li>          <li class="mob-nav__item">            <a href="#" class="mob-nav__link">              <span>Каталог</span>            </a>            <button class="mob-nav__more" data-bs-toggle="collapse" data-bs-target="#menuItem-1" aria-expanded="false" aria-controls="menuItem-1">              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" aria-hidden="true"><path d="m20.69,11.28l-6.74-6.48c-.41-.4-1.08-.4-1.5,0-.41.4-.41,1.04,0,1.44l4.93,4.74H3v2.04h14.39l-4.93,4.74c-.41.4-.41,1.04,0,1.44.41.4,1.08.4,1.5,0l6.74-6.48c.41-.4.41-1.04,0-1.44Z"/></svg>            </button>            <ul class="list-nostyled  mob-nav__list-inner  collapse" id="menuItem-1">              <li class="mob-nav__item">                <a href="#" class="mob-nav__link">                  <span>Item 1</span>                </a>              </li>              <li class="mob-nav__item">                <a href="#" class="mob-nav__link">                  <span>Item 2</span>                </a>              </li>              <li class="mob-nav__item">                <a href="#" class="mob-nav__link">                  <span>Item 3</span>                </a>              </li>            </ul>          </li>          <li class="mob-nav__item">            <a href="#" class="mob-nav__link">              <span>Як працює РЕБ</span>            </a>          </li>          <li class="mob-nav__item">            <a href="#" class="mob-nav__link">              <span>Контакти</span>            </a>          </li>        </ul>      </nav>      <div class="mob-nav__service">        <a href="http://localhost:3000/index.html#test" class="btn  mob-nav__order">          <span>Замовити РЕБ</span>        </a>        <!--DEV        @ @include('blocks/contacts-block/contacts-block.html')        -->        <ul class="list-nostyled  contacts-block">          <li class="contacts-block__item">            <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>          </li>          <li class="contacts-block__item">            <!--DEV            @ @include('blocks/social-links/social-links.html')            -->            <ul class="list-nostyled  social-links">              <li class="social-links__item">                <a href="#" class="social-links__link" title="Viber" target="_blank" rel="nofollow noopener">                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#viber"/></svg>                </a>              </li>              <li class="social-links__item">                <a href="#" class="social-links__link" title="Telegram" target="_blank" rel="nofollow noopener">                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#telegram"/></svg>                </a>              </li>              <li class="social-links__item">                <a href="#" class="social-links__link" title="WhatsApp" target="_blank" rel="nofollow noopener">                  <svg width="32" height="32"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite-svg.svg#whatsapp"/></svg>                </a>              </li>            </ul>          </li>        </ul>      </div>      <div class="mob-nav__service">        <ul class="list-nostyled  mob-nav__list  mob-nav__list--add">          <li class="mob-nav__item  mob-nav__item--add">            <p class="h5">Додатково <span class="visually-hidden">Телефони</span></p>            <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>            <a href="tel:+380965828787" class="contacts-block__link">+38 (096) 582 87 87</a>          </li>          <li class="mob-nav__item  mob-nav__item--add">            <p class="h5">Пошта</p>            <a href="mailto:eb@rapira.ua" class="contacts-block__link">eb@rapira.ua</a>          </li>        </ul>      </div>    </div>  </div>  <!-- <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script> -->
   <script src="js/script.min.js"></script>
 </body>

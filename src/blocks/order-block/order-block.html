@@ -28,7 +28,7 @@
           </li>
         </ul>
 
-        <p>Написавши листа на Email:</p>
+        <p style="margin:22px 0 12px;">Написавши листа на Email:</p>
         <ul class="list-nostyled  order-block__list">
           <li class="order-block__list-item">
             <a href="mailto:reb@rapira.ua" class="order-block__list-link">reb@rapira.ua</a>
@@ -44,31 +44,39 @@
         <p class="h3  order-block__subtitle">Або через форму зв'язку:</p>
         <p class="order-block__legend"><sup>*</sup> вказані поля обов’язкові для заповнення</p>
 
-        <form class="order-block__form" action="#" method="post">
+        <form class="order-block__form  order-form" action="#" method="post">
 
           <label class="field-text">
             <span class="field-text__name">ПІБ <sup>*</sup></span>
             <span class="field-text__input-wrap">
               <input class="field-text__input" type="text" name="name" value="" placeholder="Ваше ім’я">
-              <span class="field-text__help-text" data-error="name">Текст ошибки</span>
+              <span class="field-text__help-text" data-error="name">Текст помилки</span>
             </span>
           </label>
 
-          <label class="field-text">
-            <span class="field-text__name">Телефон:</span>
-            <span class="field-text__input-wrap">
-              <input class="field-text__input  phone-mask" type="tel" name="tel" value="">
-              <span class="field-text__help-text" data-error="tel"></span>
-            </span>
-          </label>
+          <div class="row  order-form__inner-row">
 
-          <label class="field-text">
-            <span class="field-text__name">E-mail <sup>*</sup></span>
-            <span class="field-text__input-wrap">
-              <input class="field-text__input" type="text" name="email" value="" placeholder="company@domen.com">
-              <span class="field-text__help-text" data-error="email"></span>
-            </span>
-          </label>
+            <div class="order-form__field-col">
+              <label class="field-text">
+                <span class="field-text__name">Телефон: <sup></sup></span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input  phone-mask" type="tel" name="tel" value="">
+                  <span class="field-text__help-text" data-error="tel"></span>
+                </span>
+              </label>
+            </div>
+
+            <div class="order-form__field-col">
+              <label class="field-text">
+                <span class="field-text__name">E-mail <sup>*</sup></span>
+                <span class="field-text__input-wrap">
+                  <input class="field-text__input" type="text" name="email" value="" placeholder="company@domen.com">
+                  <span class="field-text__help-text" data-error="email"></span>
+                </span>
+              </label>
+            </div>
+
+          </div>
 
           <label class="field-text">
             <span class="field-text__name">Ваше повідомлення</span>

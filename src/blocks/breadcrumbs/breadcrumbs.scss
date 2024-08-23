@@ -43,6 +43,7 @@ $text-color:                  hsl(0, 0%, 10%) !default;
       content: '●'; // U+276F, HTML-код &#10095; CSS-код  \276F - Прававя угловая скобка
       display: inline-block;
       margin-left: 8px;
+      font-size: smaller;
       font-weight: inherit;
       color: $text-muted;
     }
@@ -61,14 +62,14 @@ $text-color:                  hsl(0, 0%, 10%) !default;
     max-width: 100%;
     font-size: $font-size;
     font-weight: 400;
-    color: $link-color;
+    color: $text-color;
     //text-decoration: none;
     white-space: nowrap;
 
-    &:hover,
+    /* &:hover,
     &:focus {
       color: $link-color--hover;
       //text-decoration: none;
-    }
+    } */
   }
 }
