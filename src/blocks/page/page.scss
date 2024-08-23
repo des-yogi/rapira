@@ -146,13 +146,18 @@ img {
 }
 
 a {
-  color: $link-color;
+  color: inherit;
+  text-decoration: underline $main-color;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
   background-color: transparent;
-  transition: color 0.2s;
+  transition: all 0.2s;
 
   &:hover,
   &:focus {
-    color: $link-color--hover;
+    //color: $link-color--hover;
+    text-decoration-thickness: 4px;
+    //text-underline-offset: 4px;
   }
 
   // &:visited {

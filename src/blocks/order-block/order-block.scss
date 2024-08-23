@@ -63,10 +63,12 @@
   &__list-link {
     display: inline-flex;
     color: inherit;
+    text-decoration-color: currentColor;
 
     &:hover,
     &:focus {
       color: $main-color;
+      //text-decoration-color: $white;
     }
   }
 

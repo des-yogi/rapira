@@ -2,6 +2,26 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__inner-row {
+
+    @media (min-width: $screen-md) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__field-col {
+    @include col(xs, 12);
+    @include col(md, 6, $grid-columns, 16px);
+    @include col(xl, 6, $grid-columns, 32px);
+
+    .field-text {
+
+      @media (min-width: $screen-md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   &__submit-wrapper {
     display: flex;
     flex-direction: column;
@@ -10,6 +30,13 @@
 
     @media (min-width: $screen-xl) {
       align-items: flex-start;
+    }
+  }
+
+  &__agreement {
+
+    a {
+      text-decoration-color: currentColor;
     }
   }
 
