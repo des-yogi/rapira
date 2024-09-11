@@ -22,8 +22,9 @@
 
   &__col {
     @include col(xs, 6);
-    @include col(md, 4, $grid-columns, 16px);
-    @include col(xl, 4, $grid-columns, 32px);
+    @include col(md, 6, $grid-columns, 16px);
+    @include col(lg, 3, $grid-columns, 16px);
+    @include col(xl, 3, $grid-columns, 32px);
   }
 
   &__card {
@@ -37,12 +38,21 @@
     min-height: 200px;
     padding: 16px;
     text-align: center;
+    text-decoration: none;
     color: $white;
     background-color: $secondary-color;
     background-size: cover;
     background-position: center;
     border-radius: $border-radius--md;
     overflow: hidden;
+
+    &:hover,
+    &:focus {
+
+      #{$block-name}__icon {
+        transform: scale(1.4);
+      }
+    }
 
     @media (min-width: $screen-md) {
       justify-content: initial;
@@ -80,6 +90,7 @@
     width: 48px;
     height: 48px;
     //margin-bottom: 16px;
+    transition: transform $transition-time ease-in-out;
 
     @media (min-width: $screen-md) {
       //width: 80px;

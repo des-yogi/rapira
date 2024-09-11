@@ -54,7 +54,8 @@
     "product-page": [],
     "product-img-slider": [],
     "manual-link": [],
-    "error-404": []
+    "error-404": [],
+    "services": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

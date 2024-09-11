@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Послуги</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="container  text-page  news  services">
+
+          <div class="row">
+            <div class="text-page__col">
+              @@include('blocks/header-block/header-block.html', {
+                "title": 'Послуги',
+                "lead": '<p>Тут буде знаходитись текст для сьорч енджину. Друзі, ми переходимо на виготовлення пультів керування з алюмінію. Це підвищить їх стійкість під час фізичного впливу, та забезпечує екранування індикаторів живлення та току</p>'
+              })
+            </div>
+          </div>
+
+          <div class="container  extra-services">
+
+            <ul class="list-nostyled  row  extra-services__row">
+              <li class="extra-services__col">
+                <a href="#" class="extra-services__card"
+                      style="background-image: url(img/extra-services-bg.webp);"
+                      data-bg="img/extra-services-bg.jpg"
+                      data-bg-webp="img/extra-services-bg.webp">
+                  <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
+                    <img src="img/wrench.svg" width="80" height="80" alt="" loading="lazy">
+                  </span>
+                  <div class="extra-services__text">
+                    <h3 class="h5  extra-services__card-title">Ремонт</h3>
+                    <p>Ми пропонуємо професійний та швидкий ремонт пристроїв РЕБ</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="extra-services__col">
+                <a href="#" class="extra-services__card"
+                      style="background-image: url(img/extra-services-bg.webp);"
+                      data-bg="img/extra-services-bg.jpg"
+                      data-bg-webp="img/extra-services-bg.webp">
+                  <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
+                    <img src="img/gear.svg" width="80" height="80" alt="" loading="lazy">
+                  </span>
+                  <div class="extra-services__text">
+                    <h3 class="h5  extra-services__card-title">Монтаж</h3>
+                    <p>Забезпечуємо їх правильне встановлення та налаштування</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="extra-services__col">
+                <a href="#" class="extra-services__card"
+                      style="background-image: url(img/extra-services-bg.webp);"
+                      data-bg="img/extra-services-bg.jpg"
+                      data-bg-webp="img/extra-services-bg.webp">
+                  <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
+                    <img src="img/test.svg" width="80" height="80" alt="" loading="lazy">
+                  </span>
+                  <div class="extra-services__text">
+                    <h3 class="h5  extra-services__card-title">Тестування РЕБ</h3>
+                    <p>Забезпечуємо тестування РЕБ для перевірки ефективності та надійності</p>
+                  </div>
+                </a>
+              </li>
+
+              <li class="extra-services__col">
+                <a href="#" class="extra-services__card"
+                      style="background-image: url(img/extra-services-bg.webp);"
+                      data-bg="img/extra-services-bg.jpg"
+                      data-bg-webp="img/extra-services-bg.webp">
+                  <span class="embed-responsive  embed-responsive--1-1  extra-services__icon">
+                    <img src="img/wrench.svg" width="80" height="80" alt="" loading="lazy">
+                  </span>
+                  <div class="extra-services__text">
+                    <h3 class="h5  extra-services__card-title">Ремонт</h3>
+                    <p>Ми пропонуємо професійний та швидкий ремонт пристроїв РЕБ</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        @@include('blocks/order-block/order-block.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mob-nav/mob-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>
