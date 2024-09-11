@@ -6,6 +6,7 @@
 * https://des-yogi.github.io/rapira/product-page
 * https://des-yogi.github.io/rapira/how-it-works
 * https://des-yogi.github.io/rapira/gallery
+* https://des-yogi.github.io/rapira/services
 * https://des-yogi.github.io/rapira/news
 * https://des-yogi.github.io/rapira/news-page
 * https://des-yogi.github.io/rapira/faq
