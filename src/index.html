@@ -32,6 +32,45 @@
 
           @@include('blocks/how-it-works/how-it-works.html')
 
+          <section class="container  review">
+            <h2 class="product-slider__title  title-underlined  review__slider-title">
+              <span>Відгуки</span>
+            </h2>
+
+            <div class="swiper  review__slider">
+
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  @@include('blocks/review-card/review-card.html')
+                </div>
+                <div class="swiper-slide">
+                  @@include('blocks/review-card/review-card.html')
+                </div>
+                <div class="swiper-slide">
+                  @@include('blocks/review-card/review-card.html')
+                </div>
+                <div class="swiper-slide">
+                  @@include('blocks/review-card/review-card.html')
+                </div>
+                <div class="swiper-slide">
+                  @@include('blocks/review-card/review-card.html')
+                </div>
+                <div class="swiper-slide">
+                  @@include('blocks/review-card/review-card.html')
+                </div>
+
+              </div>
+
+              <div class="container  swiper__controls  swiper__controls--static  swiper__controls--light">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+
+            </div>
+          </section>
+
           @@include('blocks/extra-services/extra-services.html')
 
           @@include('blocks/news-block/news-block.html')
