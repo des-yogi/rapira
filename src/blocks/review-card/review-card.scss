@@ -8,11 +8,12 @@
 
   @media (min-width: $screen-md) {
     flex-direction: initial;
-    align-items: flex-start;
+    //align-items: flex-start;
     gap: 0 32px;
   }
 
   &__img {
+    border-radius: $border-radius--md;
 
     @media (min-width: $screen-md) {
       flex: 0 0 280px;
@@ -31,7 +32,7 @@
 
     @media (min-width: $screen-md) {
       flex: 1 1 auto;
-      //flex-basis: calc(100% - 280px);
+
     }
   }
 
