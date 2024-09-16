@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="no-js  page" lang="uk" prefix="og: https://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8">
+  <title>Відгуки</title>
+  @@include('_include/page_head.html')
+</head>
+
+<body>
+<noscript>У вас отключен JavaScript. Приносим наши извинения, но это делает затруднительным использование данного сайта.</noscript>
+
+  <div class="page__inner">
+
+    <div class="page__content">
+      @@include('blocks/page-header/page-header.html')
+
+      @@include('blocks/breadcrumbs/breadcrumbs.html')
+
+      <main class="main">
+
+        <div class="container  text-page  review">
+
+          <div class="row">
+            <div class="text-page__col">
+              @@include('blocks/header-block/header-block.html', {
+                "title": 'Відгуки',
+                "lead": '<p>Наша компанія. Ще якийсь текст. Для сьорч енджину. Для нас немає нічого не можливого. Наші продукти надійні та перевірені на практиці.</p>'
+              })
+            </div>
+          </div>
+
+          <div class="row  review__inner">
+
+            <div class="review__col">
+              @@include('blocks/review-card/review-card.html')
+            </div>
+
+            <div class="review__col">
+              @@include('blocks/review-card/review-card.html')
+            </div>
+
+            <div class="review__col">
+              @@include('blocks/review-card/review-card.html')
+            </div>
+
+            <div class="review__col">
+              @@include('blocks/review-card/review-card.html')
+            </div>
+
+            <div class="review__col">
+              @@include('blocks/review-card/review-card.html')
+            </div>
+
+          </div>
+
+        </div>
+
+        @@include('blocks/order-block/order-block.html')
+
+      </main>
+
+    </div>
+
+    <div class="page__footer-wrapper">
+      @@include('blocks/page-footer/page-footer.html')
+    </div>
+
+  </div>
+
+  @@include('blocks/mob-nav/mob-nav.html')
+
+  @@include('_include/page_bottom.html')
+
+</body>
+</html>

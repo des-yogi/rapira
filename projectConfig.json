@@ -55,7 +55,9 @@
     "product-img-slider": [],
     "manual-link": [],
     "error-404": [],
-    "services": []
+    "services": [],
+    "review": [],
+    "review-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",
