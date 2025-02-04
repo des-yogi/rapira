@@ -135,6 +135,7 @@
     span {
       position: relative;
       padding: 4px 0 4px;
+      white-space: nowrap;
 
       &::before {
         display: block;
@@ -152,7 +153,6 @@
     &--lvl-2 {
       display: flex;
       padding: 0 12px;
-      white-space: nowrap;
       text-align: initial;
       /* @media (max-width: ($menu-desktop-width - 1)) {
       } */

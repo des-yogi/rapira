@@ -63,12 +63,16 @@
   &__list-link {
     display: inline-flex;
     color: inherit;
-    text-decoration-color: currentColor;
+    //text-decoration-color: currentColor;
+    text-decoration: none;
 
     &:hover,
     &:focus {
       color: $main-color;
-      //text-decoration-color: $white;
+      //text-decoration: underline;
+      //text-decoration-color: currentColor;
+      //text-decoration-thickness: 2px;
+      //text-underline-offset: 4px;
     }
   }
 

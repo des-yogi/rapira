@@ -1,7 +1,4 @@
 .copyrights {
-  padding: 16px 0;
-  font-size: $font-size-sm;
-  border-top: 1px solid rgba($white, 0.5);
 
   $block-name:                &; // #{$block-name}__element
 
@@ -10,6 +7,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 24px;
+  padding: 16px 0;
+  margin-bottom: 0;
+  font-size: $font-size-sm;
+  border-top: 1px solid rgba($white, 0.5);
 
   @media (max-width: $screen-md - 1) {
     justify-content: center;
@@ -27,7 +28,8 @@
 
     a {
       color: inherit;
-      text-decoration-color: currentColor;
+      //text-decoration-color: currentColor;
+      text-decoration: none;
 
       &:hover,
       &:focus {
