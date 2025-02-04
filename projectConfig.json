@@ -21,7 +21,6 @@
     "sprite-svg": [],
     "table": [],
     "table-mobile-scroll": [],
-    "to-top": [],
     "typo": [],
     "hero": [],
     "features": [],
@@ -57,7 +56,9 @@
     "error-404": [],
     "services": [],
     "review": [],
-    "review-card": []
+    "review-card": [],
+    "customers-slider": [],
+    "customer-card": []
   },
   "addCssBefore": [
     "../../node_modules/bootstrap/scss/_functions",

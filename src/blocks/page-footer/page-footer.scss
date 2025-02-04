@@ -10,52 +10,54 @@
   &__row {
     padding-top: 40px;
     padding-bottom: 40px;
-    gap: 32px;
+    gap: 32px 0;
   }
 
   &__presentation-col {
     @include col(xs, 12);
     @include col(md, 12, $grid-columns, 16px);
-    @include col(xl, 12, $grid-columns, 32px);
+    @include col(xl, 5, $grid-columns, 32px);
   }
 
   &__nav-col {
     @include col(xs, 12);
     @include col(md, 12, $grid-columns, 16px);
-    @include col(xl, 12, $grid-columns, 32px);
+    @include col(xl, 7, $grid-columns, 32px);
   }
 
   &__logo-col {
     @include col(xs, 12);
-    @include col(md, 6, $grid-columns, 16px);
-    @include col(xl, 4, $grid-columns, 32px);
+    //@include col(md, 6, $grid-columns, 16px);
+    //@include col(xl, 12, $grid-columns, 32px);
   }
 
   &__social-col {
     @include col(xs, 12);
-    @include col-offset(md, 2);
-    @include col(md, 4, $grid-columns, 16px);
-    @include col-offset(xl, 5);
-    @include col(xl, 2, $grid-columns, 32px);
+    //@include col-offset(md, 2);
+    //@include col(md, 4, $grid-columns, 16px);
+    //@include col-offset(xl, 5);
+    //@include col(xl, 2, $grid-columns, 32px);
   }
 
   &__about-col {
     @include col(xs, 12);
-    @include col(md, 4, $grid-columns, 16px);
-    @include col-offset(xl, 5);
-    @include col(xl, 2, $grid-columns, 32px);
+    @include col(md, 3.5, $grid-columns, 16px);
+    //@include col-offset(xl, 0);
+    @include col(xl, 4, $grid-columns, 32px);
   }
 
   &__catalog-col {
     @include col(xs, 12);
-    @include col(md, 4, $grid-columns, 16px);
-    @include col(xl, 2, $grid-columns, 32px);
+    @include col(md, 3.5, $grid-columns, 16px);
+    @include col(xl, 4, $grid-columns, 32px);
   }
 
   &__contacts-col {
     @include col(xs, 12);
+    @include col-offset(md, 1);
     @include col(md, 4, $grid-columns, 16px);
-    @include col(xl, 2, $grid-columns, 32px);
+    @include col-offset(xl, 0.7)
+    @include col(xl, 3.3, $grid-columns, 32px);
   }
 
   &__presentation {
@@ -71,10 +73,22 @@
     line-height: 1.6;
   }
 
+  &__social {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  &__social-item {
+    flex: 0 0 40px;
+  }
+
   &__social-link {
     display: inline-flex;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     text-decoration: none;
     color: inherit;
 

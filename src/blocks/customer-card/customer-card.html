@@ -1,0 +1,34 @@
+<!--DEV
+@ @include('blocks/customer-card/customer-card.html', {
+  "img": "chevron",
+  "title": "Окрема президентська бригада"
+})
+-->
+
+<figure class="customer-card">
+  <div class="embed-responsive  embed-responsive--1-1  customer-card__img">
+    <picture>
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1280px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1280px)">
+      <!-- 174x174, 265x265 2x -->
+      <source srcset="img/@@img.webp,
+                      img/@@img.webp 2x" media="(min-width: 1024px)" type="image/webp">
+      <source srcset="img/@@img.jpg,
+                      img/@@img.jpg 2x" media="(min-width: 1024px)">
+      <!-- 340x340, 680x680 2x -->
+      <source srcset="img/@@img.webp" media="(min-width: 768px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 768px)">
+      <!-- 340x340 -->
+      <source srcset="img/@@img.webp" media="(min-width: 480px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 480px)">
+      <!-- 400x400 -->
+      <source srcset="img/@@img.webp" media="(min-width: 320px)" type="image/webp">
+      <source srcset="img/@@img.jpg" media="(min-width: 320px)">
+      <!-- 280x280 -->
+      <img src="img/@@img.jpg" alt="" width="352" height="352" loading="lazy">
+    </picture>
+  </div>
+  <figcaption class="customer-card__caption">@@title</figcaption>
+</figure>

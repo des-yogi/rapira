@@ -1,0 +1,39 @@
+.customer-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px 0;
+  margin: 0;
+
+  $block-name:                &; // #{$block-name}__element
+
+  &__wrapper {
+    gap: 32px 0;
+
+    @media (min-width: $screen-md) {
+      gap: 40px 0;
+    }
+  }
+
+  &__col {
+    @include col(xs, 6);
+    @include col(md, 3, $grid-columns, 16px);
+    @include col(xl, 2, $grid-columns, 32px);
+  }
+
+  &__img {
+    flex: 0 0;
+    background-color: $gray-light;
+    border-radius: $border-radius--md;
+    border: 1px solid $gray-btn;
+    box-shadow: 0 6px 10px 3px rgba(0, 0, 0, 0.1);
+
+    img {
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+
+  &__caption {
+    text-align: center;
+  }
+}

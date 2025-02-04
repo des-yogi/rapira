@@ -14,8 +14,7 @@ $text-color:                  hsl(0, 0%, 10%) !default;
     margin-bottom: calc(72px - 8px);
   }
 
-  $block-name:                &;
-  // #{$block-name}__element
+  $block-name:                &; // #{$block-name}__element
 
   &__list {
     display: flex;
