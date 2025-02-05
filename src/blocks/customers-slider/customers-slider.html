@@ -1,14 +1,96 @@
 <!--DEV
-
-Для использования этого файла как шаблона:
-
 @ @include('blocks/customers-slider/customers-slider.html')
-
-(Нужно убрать пробел между символами @)
-Подробнее: https://www.npmjs.com/package/gulp-file-include
-
-
-
-<div class="customers-slider">content</div>
-
 -->
+
+<div class="container  customers-slider">
+
+  <h2 class="title-underlined  customers-slider__title" style="margin-top: 0; text-align: center;">
+    <span>Нам довіряють</span>
+  </h2>
+
+  <div class="swiper  customers-slider__container">
+
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+        <!-- 160x160, 240x240 2x -->
+        <!-- 10 слайдов мах -->
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+      <div class="swiper-slide  customers-slider__slide">
+        @@include('../../blocks/customer-card/customer-card.html', {
+          "img": "chevron",
+          "title": "Окрема президентська бригада"
+        })
+      </div>
+
+    </div>
+
+    <div class="container  swiper__controls  swiper__controls--static  swiper__controls--light">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </div>
+</div>

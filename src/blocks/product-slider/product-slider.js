@@ -1,5 +1,4 @@
 (function(){
-
   const products = new Swiper('.product-slider__slider', {
     speed: 400,
     spaceBetween: 32,
