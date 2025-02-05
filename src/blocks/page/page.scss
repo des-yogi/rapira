@@ -388,20 +388,29 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 32px;
+    gap: 16px;
     position: absolute;
     bottom: 24px;
     z-index: 1;
     height: 48px;
     color: $white;
 
+    @media (min-width: $screen-md) {
+      gap: 24px;
+    }
+
+    @media (min-width: $screen-xl) {
+      gap: 32px;
+    }
+
     &--static {
       position: static;
-      margin-top: 24px;
+      //margin-top: 24px;
+      margin-top: 36px;
 
-      @media (min-width: $screen-xl) {
-        margin-top: 32px;
-      }
+      // @media (min-width: $screen-md) {
+      //   margin-top: 36px;
+      // }
     }
 
     &--light {
@@ -437,6 +446,11 @@ a {
   }
 }
 
+.swiper-wrapper,
+.swiper-slide {
+  box-sizing: border-box;
+}
+
 .swiper-pagination,
 .swiper-button-prev,
 .swiper-button-next {
@@ -448,12 +462,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 }
 
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
+  margin: 0 !important;
   //margin: 0 5px !important;
   background-color: $white;
 }
@@ -497,12 +512,9 @@ a {
 // @include col(xl, 3, $grid-columns, 32px);
 // @include col(xxl, 3, $grid-columns, 32px);
 
-.test-col {
-  // тестовый
-  @include col(xs, 12);
-  @include col(md, 6, $grid-columns, 16px);
-  @include col(xl, 3, $grid-columns, 32px);
-}
+// @include col(xs, 12);
+// @include col(md, 6, $grid-columns, 16px);
+// @include col(xl, 3, $grid-columns, 32px);
 
 // background-image: svg-load('../blocks/phones-modal/bg-img/phone.svg', fill=$main-color);
 // background-image: svg-load('../blocks/sprite-svg/svg/phone.svg', fill=$main-color);
